@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="cb27e10383e926101e5de070deaad3b3" sys_domain="global" table="x_1755447_laptop_0_laptop_serial" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>serial_type</element>
+            <element>serial_no</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-05-21 01:38:58</sys_created_on>
-            <sys_id>8cb7adcf83a926101e5de070deaad301</sys_id>
+            <sys_created_on>2025-05-21 12:50:42</sys_created_on>
+            <sys_id>f361045383e566101e5de070deaad3b6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1755447_laptop_0_laptop_serial" sys_domain="global" view="Default view">cb27e10383e926101e5de070deaad3b3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-05-21 01:38:58</sys_updated_on>
+            <sys_updated_on>2025-05-21 12:50:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>serial_no</element>
+            <element>laptop_model</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-05-21 01:38:58</sys_created_on>
-            <sys_id>84b7adcf83a926101e5de070deaad302</sys_id>
+            <sys_created_on>2025-05-21 12:50:42</sys_created_on>
+            <sys_id>7f61445383e566101e5de070deaad33f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1755447_laptop_0_laptop_serial" sys_domain="global" view="Default view">cb27e10383e926101e5de070deaad3b3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-05-21 01:38:58</sys_updated_on>
+            <sys_updated_on>2025-05-21 12:50:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

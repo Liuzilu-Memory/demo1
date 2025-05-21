@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="serial_type" table="x_1755447_laptop_0_laptop_serial">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="laptop_model" table="x_1755447_laptop_0_laptop_serial">
         <active>true</active>
         <array>false</array>
         <attributes/>
@@ -8,7 +8,7 @@
         <choice>0</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>Serial Type</column_label>
+        <column_label>Laptop Model</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -21,7 +21,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>serial_type</element>
+        <element>laptop_model</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -46,14 +46,14 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-05-21 01:38:26</sys_created_on>
-        <sys_name>Serial Type</sys_name>
+        <sys_created_on>2025-05-21 12:47:50</sys_created_on>
+        <sys_name>Laptop Model</sys_name>
         <sys_package display_value="LaptopRequest" source="x_1755447_laptop_0">fd80f47683e1e2101e5de070deaad311</sys_package>
         <sys_policy/>
         <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
-        <sys_update_name>sys_dictionary_x_1755447_laptop_0_laptop_serial_serial_type</sys_update_name>
+        <sys_update_name>sys_dictionary_x_1755447_laptop_0_laptop_serial_laptop_model</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-21 01:38:26</sys_updated_on>
+        <sys_updated_on>2025-05-21 12:47:50</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
