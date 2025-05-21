@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="035178b683e1e2101e5de070deaad3ef" label="laptop_request" max_length="40" name="x_1755447_laptop_0_laptop_request" type="collection">
+        <element choice="1" label="Laptop Model" max_length="40" name="laptop_model" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Lenovo Xiaoxin Pro 14" sequence="2" value="lenovo_xiaoxin_pro_14"/>
+                <element inactive_on_update="false" label="MacBook Air" sequence="0" value="macbook_air"/>
+                <element inactive_on_update="false" label="Lenovo YOGA Air 14" sequence="1" value="lenovo_yoga_air_14"/>
+            </choice>
+        </element>
+        <element label="Requested By" max_length="255" name="requested_by" type="string"/>
+        <element label="Approval" max_length="40" name="approval" type="boolean"/>
+        <element label="Remark" max_length="255" name="remark" type="string"/>
+        <element label="Employee Name" max_length="32" name="employee_name" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="employee_name"/>
+        </index>
+    </element>
+</database>

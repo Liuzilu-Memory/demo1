@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="2a27e10383e926101e5de070deaad317" label="laptop_serial" max_length="40" name="x_1755447_laptop_0_laptop_serial" type="collection">
+        <element label="Serial Type" max_length="255" name="serial_type" type="string"/>
+        <element label="Serial No" max_length="40" name="serial_no" type="integer"/>
+    </element>
+</database>

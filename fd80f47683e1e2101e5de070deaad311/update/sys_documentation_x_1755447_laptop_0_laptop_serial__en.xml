@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="laptop_serial" language="en" table="x_1755447_laptop_0_laptop_serial">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>laptop_serial</label>
+            <language>en</language>
+            <name>x_1755447_laptop_0_laptop_serial</name>
+            <plural>laptop_serials</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-05-21 01:36:41</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>laptop_serial</sys_name>
+            <sys_package display_value="LaptopRequest" source="x_1755447_laptop_0">fd80f47683e1e2101e5de070deaad311</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+            <sys_update_name>sys_documentation_x_1755447_laptop_0_laptop_serial__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-05-21 01:36:41</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
