@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom">
+    <sc_cat_item_user_criteria_mtom action="DELETE">
+        <sc_cat_item display_value="Apply Laptop">e271e9ab8361e6101e5de070deaad358</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-23 02:02:24</sys_created_on>
+        <sys_id>be30007f836de6101e5de070deaad3df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Apply Laptop.Any User</sys_name>
+        <sys_package display_value="LaptopRequest" source="x_1755447_laptop_0">fd80f47683e1e2101e5de070deaad311</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_be30007f836de6101e5de070deaad3df</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-23 02:02:24</sys_updated_on>
+        <user_criteria display_value="Any User">fb1166d64fff0200086eeed18110c7ab</user_criteria>
+    </sc_cat_item_user_criteria_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</application>
+        <file_path/>
+        <instance_id>b1c671171be64e18168f4089bd4bcb1f</instance_id>
+        <instance_name>dev274192</instance_name>
+        <name>sc_cat_item_user_criteria_mtom_be30007f836de6101e5de070deaad3df</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom"><sc_cat_item_user_criteria_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="Apply Laptop">e271e9ab8361e6101e5de070deaad358</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-23 02:02:24</sys_created_on><sys_id>be30007f836de6101e5de070deaad3df</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Apply Laptop.Any User</sys_name><sys_package display_value="LaptopRequest" source="x_1755447_laptop_0">fd80f47683e1e2101e5de070deaad311</sys_package><sys_policy/><sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope><sys_update_name>sc_cat_item_user_criteria_mtom_be30007f836de6101e5de070deaad3df</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-23 02:02:24</sys_updated_on><user_criteria display_value="Any User">fb1166d64fff0200086eeed18110c7ab</user_criteria></sc_cat_item_user_criteria_mtom></record_update>]]></payload>
+        <payload_hash>-1814737876</payload_hash>
+        <record_name>Apply Laptop.Any User</record_name>
+        <reverted_from/>
+        <source>9fbd2a03832166101e5de070deaad3e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-23 02:02:24</sys_created_on>
+        <sys_id>ba30007f836de6101e5de070deaad3f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196fae095860000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-23 02:02:24</sys_updated_on>
+        <type>Catalog Item Available for</type>
+        <update_guid>f230007fa26de610466e06e25b7330e5</update_guid>
+        <update_guid_history>f230007fa26de610466e06e25b7330e5:-1814737876</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Apply Laptop.Any User">8e50c07f836de6101e5de070deaad367</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-23 02:02:54</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_mtom">sc_cat_item_user_criteria_mtom</sys_db_object>
+        <sys_id>0c94e8f313c44a088171cdb3bbcb3184</sys_id>
+        <sys_metadata>be30007f836de6101e5de070deaad3df</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Apply Laptop.Any User</sys_name>
+        <sys_package display_value="LaptopRequest" source="x_1755447_laptop_0">fd80f47683e1e2101e5de070deaad311</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_scope_delete display_value="">5a75c4b8f3c54110a774875937418e41</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_be30007f836de6101e5de070deaad3df</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_mtom_be30007f836de6101e5de070deaad3df">ba30007f836de6101e5de070deaad3f2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-23 02:02:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
