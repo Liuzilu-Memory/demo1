@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Request for laptop">02c07c7683e1e2101e5de070deaad3f7</sc_cat_item>
+        <sc_category display_value="Laptops">59f586f23731300054b6a3549dbe5db7</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-24 13:32:10</sys_created_on>
+        <sys_id>a4b7abc483f1aa101e5de070deaad337</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Laptops.Request for laptop</sys_name>
+        <sys_package display_value="LaptopRequest" source="x_1755447_laptop_0">fd80f47683e1e2101e5de070deaad311</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_update_name>sc_cat_item_category_a4b7abc483f1aa101e5de070deaad337</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-24 13:32:10</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</application>
+        <file_path/>
+        <instance_id>b1c671171be64e18168f4089bd4bcb1f</instance_id>
+        <instance_name>dev274192</instance_name>
+        <name>sc_cat_item_category_a4b7abc483f1aa101e5de070deaad337</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Request for laptop">02c07c7683e1e2101e5de070deaad3f7</sc_cat_item><sc_category display_value="Laptops">59f586f23731300054b6a3549dbe5db7</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-24 13:32:10</sys_created_on><sys_id>a4b7abc483f1aa101e5de070deaad337</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Laptops.Request for laptop</sys_name><sys_package display_value="LaptopRequest" source="x_1755447_laptop_0">fd80f47683e1e2101e5de070deaad311</sys_package><sys_policy/><sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope><sys_update_name>sc_cat_item_category_a4b7abc483f1aa101e5de070deaad337</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-24 13:32:10</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-581597372</payload_hash>
+        <record_name>Laptops.Request for laptop</record_name>
+        <reverted_from/>
+        <source>9fbd2a03832166101e5de070deaad3e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-24 13:32:10</sys_created_on>
+        <sys_id>ecb7abc483f1aa101e5de070deaad33b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197027e72f60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-24 13:32:10</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>20b7abc493f1aa109d4ada08d889383b</update_guid>
+        <update_guid_history>20b7abc493f1aa109d4ada08d889383b:-581597372</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Laptops.Request for laptop">5db7abc483f1aa101e5de070deaad3c1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-24 13:32:13</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>1637ed660261467784af13ba8058d021</sys_id>
+        <sys_metadata>a4b7abc483f1aa101e5de070deaad337</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Laptops.Request for laptop</sys_name>
+        <sys_package display_value="LaptopRequest" source="x_1755447_laptop_0">fd80f47683e1e2101e5de070deaad311</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_scope_delete display_value="">5a75c4b8f3c54110a774875937418e41</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_a4b7abc483f1aa101e5de070deaad337</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_a4b7abc483f1aa101e5de070deaad337">ecb7abc483f1aa101e5de070deaad33b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-24 13:32:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
