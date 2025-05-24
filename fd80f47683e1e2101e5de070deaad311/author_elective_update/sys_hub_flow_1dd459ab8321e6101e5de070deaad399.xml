@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,timeFromCreateToActivate=2072000,viewActivatedIn=diagramming</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>8ef9d20383ed26101e5de070deaad31c</copied_from>
+        <copied_from_name>IT manager approval</copied_from_name>
+        <description>IT manager approve or reject the request due to the storage.</description>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>new_employee_laptop_application</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.requested_by","label":"Trigger - Record Created or Updated➛laptop_request Record➛Requested By","reference":"","reference_display":"Requested By","type":"string","base_type":"string","parent_table_name":"x_1755447_laptop_0_laptop_request","column_name":"requested_by","usedInstances":{"0a9abd0f-d59e-465b-b9b2-5acbdf8b7708":["email_to"],"7125ee29-93f9-4861-a36b-b8f744479888":["email_to"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛laptop_request Record","reference":"x_1755447_laptop_0_laptop_request","reference_display":"laptop_request","type":"reference","base_type":"reference","usedInstances":{"c5de04a4-9cde-444e-995b-65c9daf7277f":["record"]},"attributes":{}},{"name":"Created or Updated_1.current.current","label":"Trigger - Record Created or Updated➛Record","type":"reference","base_type":"reference","usedInstances":{"c5de04a4-9cde-444e-995b-65c9daf7277f":["record"]},"attributes":{}},{"name":"{{static.46d44a23a9fe19810012d100cca80666}}","label":"Beth Anglin","reference":"sys_user","type":"reference","base_type":"reference","usedInstances":{"c5de04a4-9cde-444e-995b-65c9daf7277f":["approval_conditions"]}},{"name":"c5de04a4-9cde-444e-995b-65c9daf7277f.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"b5de6d16-7275-4c88-8002-00a60b1e1b7e":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"c5de04a4-9cde-444e-995b-65c9daf7277f":["record"],"71a77a7b-6007-49a9-88b4-78a6bb3adcda":["requested_by","employee_name"],"b7ac81f6-ce1f-4ff2-b9c9-5aa2cd7511b5":["record"]},"attributes":{"default_search_field":"number"}},{"name":"Service Catalog_1.request_item.sc_catalog.sys_scope","label":"Trigger - Service Catalog➛Requested Item Record➛Catalog➛Application","reference":"sys_scope","reference_display":"Application","type":"reference","base_type":"reference","parent_table_name":"sc_catalog","column_name":"sys_scope","usedInstances":{}},{"name":"Service Catalog_1.table_name","label":"Trigger - Service Catalog➛Table Name","type":"table_name","base_type":"table_name","usedInstances":{"71a77a7b-6007-49a9-88b4-78a6bb3adcda":["requested_by"]},"attributes":{"test_input_hidden":"true"}},{"name":"Service Catalog_1.request_item.requested_for","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"requested_for","usedInstances":{"6df7a543-201c-439e-87c7-4a75d8e81086":["ah_to"]}},{"name":"Service Catalog_1.request_item.requested_for.email","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"b7ac81f6-ce1f-4ff2-b9c9-5aa2cd7511b5":["ah_to"]}},{"name":"{{static.62826bf03710200044e0bfc8bcbe5df1}}","label":"Abel Tuter","reference":"sys_user","type":"reference","base_type":"reference","usedInstances":{"c5de04a4-9cde-444e-995b-65c9daf7277f":["approval_conditions"]}}]</label_cache>
+        <master_snapshot>53bc19278361e6101e5de070deaad3b6</master_snapshot>
+        <master_snapshot_digest/>
+        <name>New Employee Laptop Application</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>f3bc59278361e6101e5de070deaad306</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 13:33:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1dd459ab8321e6101e5de070deaad399</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>New Employee Laptop Application</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="LaptopRequest" source="x_1755447_laptop_0">fd80f47683e1e2101e5de070deaad311</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_update_name>sys_hub_flow_1dd459ab8321e6101e5de070deaad399</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:18:04</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=1dd459ab8321e6101e5de070deaad399"/>
+    <sys_variable_value action="DELETE" query="document_key=1dd459ab8321e6101e5de070deaad399"/>
+    <sys_flow_catalog_trigger action="DELETE">
+        <active>true</active>
+        <catalog_item/>
+        <name/>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <sys_class_name>sys_flow_catalog_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 14:08:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f3bc59278361e6101e5de070deaad306</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:08:07</sys_updated_on>
+        <trigger_definition/>
+    </sys_flow_catalog_trigger>
+    <sys_trigger_runner_mapping action="DELETE" query="identifier=1dd459ab8321e6101e5de070deaad399"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=1dd459ab8321e6101e5de070deaad399"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=1dd459ab8321e6101e5de070deaad399^sys_idNOT IN95d459ab8321e6101e5de070deaad39a"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>1dd459ab8321e6101e5de070deaad399</id>
+        <name>New Employee Laptop Application</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 13:33:33</sys_created_on>
+        <sys_id>95d459ab8321e6101e5de070deaad39a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 13:33:33</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=95d459ab8321e6101e5de070deaad39a"/>
+    <sys_hub_flow_input action="DELETE" query="model=1dd459ab8321e6101e5de070deaad399^sys_idNOT INd9d459ab8321e6101e5de070deaad39f,f3acd1af8321e6101e5de070deaad3f8"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="New Employee Laptop Application">1dd459ab8321e6101e5de070deaad399</model>
+        <model_id>1dd459ab8321e6101e5de070deaad399</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_1dd459ab8321e6101e5de070deaad399</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 13:33:33</sys_created_on>
+        <sys_id>d9d459ab8321e6101e5de070deaad39f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:18:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=d9d459ab8321e6101e5de070deaad39f"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="New Employee Laptop Application">1dd459ab8321e6101e5de070deaad399</model>
+        <model_id>1dd459ab8321e6101e5de070deaad399</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_1dd459ab8321e6101e5de070deaad399</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 14:07:51</sys_created_on>
+        <sys_id>f3acd1af8321e6101e5de070deaad3f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:07:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=f3acd1af8321e6101e5de070deaad3f8"/>
+    <sys_hub_flow_output action="DELETE" query="model=1dd459ab8321e6101e5de070deaad399"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=1dd459ab8321e6101e5de070deaad399"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=1dd459ab8321e6101e5de070deaad399^sys_idNOT IN08bc95278361e6101e5de070deaad36f"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="New Employee Laptop Application">1dd459ab8321e6101e5de070deaad399</flow>
+        <name>Service Catalog</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 14:07:52</sys_created_on>
+        <sys_id>08bc95278361e6101e5de070deaad36f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:08:05</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/61TTW/bMAz9K4FOG5CDk6zNktswoECAbgWarpdiMGSJcoTJkifJbr2g/32kPxK3M4YB3U2iyMfHx6eHIzM8A8O27LaysyvjHmc7y+ZM2wjecnPXlICP4uC0AIx3h2sdIts+HJm656aihIyLH7l3lZWYpK5HmIowtZ2dM2bvJChemfiecncFzwmBznswICJItlXcBMDItzC+fdEhaJv3gef5iIByHv5O4GXGG9p+n7OCW8mj8805ybviDorS8AinoPMSPNsukmTOaiK6b8JOdl0tL6i/r2xKDFNNstf9NHiUOiBYc3+OiIM20oNF5ZFCyT0iRMI/vnrS1OIy2SRivdys18tktUoSdZEpoYRYf1wkl4uLDQJOr36SWHzlg/Fk8BTBypFgf6rjgcsba86BAxqsm6rgT0H/QvAPCeUpwDFEP/HpmvZqDEIQi9A60Py71eopr/aDJGSmKawXrqmnzDZIQb7ou33+/wQXbya4JIKddDdl1A7Nwla0Wp4ZqglN6BbuQWBJGr3OcyzEImeqwn6d8kXPfuTSKuC2oCRH0IqH77E/uMfbYZ1X2raU+kfjBDenG4/YOasi6XdkXNYcK8jR0WOP59YV6c+KKtp/MvRK24koIQivy/hJRF3D6dP+BvLQA67rBAAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=1dd459ab8321e6101e5de070deaad399^sys_idNOT IN4cbc95278361e6101e5de070deaad376,a1d459ab8321e6101e5de070deaad3ec,c8bc95278361e6101e5de070deaad374"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment>Send rejected email</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="New Employee Laptop Application">1dd459ab8321e6101e5de070deaad399</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>91d5f11b-b0b8-4614-bbd7-e4d009967b31</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 14:07:52</sys_created_on>
+        <sys_id>4cbc95278361e6101e5de070deaad376</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:07:52</sys_updated_on>
+        <ui_id>b7ac81f6-ce1f-4ff2-b9c9-5aa2cd7511b5</ui_id>
+        <values>H4sIAAAAAAAA/+1X3W7bNhR+FULXniv/x9lVlyBYgLUFEqPF0BQCRR5ZXClRpaikbuB32bPsyXooUZYVN45nZ0EH+EYAD3n+v4+H+njvCe6dekN+4o/DaEgn/qA/8P2T/nQaDqaRfzKZ+j3GvY6X0gTwpAamtF3fUllYwf39NehbwYCcUUOlmge9roYvBeQmEAaS5RIPc5Fnki7eOx2UsFhIriH1Tj9+6ngZ1WjegPZO7x9smUUGgaQhSFQ8V6xIIDXk8hxt7Bp6rT2jeg6GXNUpPEzJusI1d04CYYW4ZcPyOx58NZByQKcRlTl0vISmnBqlFyuJBsrfpbIRxCI1aPJ1nismqIGcmBgIJFRIcidMTCip3Hc9a+9rLr5hCIO+NRUBFoHZiETKBMeIvDVx4GqK25fNNosVtuJdZoRKq0IbGsq65koWSfq2ytp2BSJaSLPWlSJHu5DZNG3cRheYQ3Qdq7ur2u+FSMuCuASlYlSuVtQYLcIC8ywbKYHqxl5QhmRtoieQUNY4oVkm0nmQaXUrSsMYZtKdS1x0I6nuUD8X87RLmc2piwWn3QuUn5fi91QLm+AbNIPKy7JAwZfCxlSl2HZuzwZl3/FozrTIzGs0fAsuhWXHMaI33QYrPmzgs2azYUXOAiRBSYBN+F9V9ABOLqv9/cgws47J28rxrkG3lB9JwvGgJXM06B1Egxli31QkrFBPjAtjBf0Tvw39RyD/7FB3ge6N9f8Gz9jXPKhg6nIrnT+J86fQ7Y/HYTgOR5NBA5Qpi/gkjMZ0wgYNMO7w0tIJ1Z+D8tJag3hvE9iO23vCGZVfXZTpdXaOslbGK1AWHMiHOtxtGTh8h0rhBZU24O4fBO4KicQogr2TC7zZV56tsLn3TUwNETnJsV1dMlNEuODXNDpkoQqSFLnBYwZ3WrRpDYvhizDGtdZJz3/Y9/8FpQ6lzmj7HUsb4NE4MOpfvJTqBfAgUrpbgmW5JJs029/Qfsy8xq6k85qVOxRgRWm1WQ1Hvry26bg32M696iWyQb21seEfB0drcHCQIhFlcyt+Hgp8vrXv4Ldazdga8J/xB6ANxR1CqhXPzjbjewSKw/3GwBGLL4fF3tafPhi3eh2+DBh3iKlW/O0BGsNtcBwd4fizw3G0vfWs1ey8CP8CZtYg+acqdPloFIyWb8iY5iQESPG5Z48C3wTtTjrPMu6fzm2luMrsR9k+Au/xcfD/TM9burXdUb99bym+WMPxTeH7A5YRG+EvRqSLhIFWyoRYhs/lJr/xbqpjYL/9cRrm2a+V3qvMbaTOTrW8cnBuH9okREvpn7/3s7kfYX6fvfmjpssO9VtNgap6G+V0RIlNIhuaTA6cAuPRaDA+EmV9DGR3vM+1yjKX20Gj4NN30DLSDEsXAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="New Employee Laptop Application">1dd459ab8321e6101e5de070deaad399</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 13:33:34</sys_created_on>
+        <sys_id>a1d459ab8321e6101e5de070deaad3ec</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:07:52</sys_updated_on>
+        <ui_id>c5de04a4-9cde-444e-995b-65c9daf7277f</ui_id>
+        <values>H4sIAAAAAAAA/+1YUW/bOAz+K4Gf05wcO66Tt+KKAj3c3YC020szGIpEJxoUObPkbjkj/32ULSdu0npBL4fehr0EESWSH8mPtOyH0hPcm3iXcTqE8XhI5j4hASHxiJE4gHlwGV0GlBGv7ym6AjyZA8tyjutHKgsrKMs7yB8Fg97v1FCZLRJ/kMPnArRJhIHVdouHudBrSTcfnA5K2FJInoPyJg8f+96a5mjeQO5NyoMts1lDIukcJCpeZ6xYgTK922u0cSr0RnvaYD+MxfrANXfWE2GFuGXxkL4HXw0oDugtpVJD31tRxanJ8o03MXmBghwof6fkZndiKZSpA13Rr1r8g+aDoT2XAkbGXBJ2y8QlqMlNhvl8tzYiU7XE0LlsEpfJYqX+riOwqYWUFtK0UltotAdrC9mCqBGmd8vsy7TxdyNUFZxDKzNG5W5FjcnFvDCgbTVAQpWTFV2vhVok6zx7FJUyQlkNFhIXg1RmX9CnFgs1oMziHmCC6OAG5deV+APNhQ3iLzSDytsq+ORzYf3WYTjASRVzHTCe0iwXa3OFNh/BIdz2HWvnrLP0bF/p2tyetJolyNGKn8fsnNbsBd67rfdfx9V767NXFap/Mt4nysf4HVGrZaJq046nfjdPneQUosbkbYjqEP1gTP0eSSGMghH+XKYB8Yc+iSGKYzYmlMVRNAqDfZHRHyKmEqlJNdre0/WME/QOM6YWDSNPANcoXjl0vWmD7kXYjqW6ceUYOjwbQ/3oB6VoIe4PclNL/jyszn/DZevuvRI43m5t9aPhPBqTmF/wlMwvwjgYXVAG5AIifwQjHrGRH/xr/hO/a+jx+BkipQJk+4rRbBy3QWvnde1wY109GdIn4D1qiRsH+KVAXENUy4Oxfb6miAl5o674eW8YrJMM0Bren7IiVx3cTZZCVyV9kcOtE+fi8gnwG+U/avyHVD4Mq4PJwS8m/4+ZHI46qQDPTC+WKS4sPt3icz3zQE/hEzCjr9Tm/UNZakONYIMw4mFIhwEdp+CPY/TkDzn+MkZjEkXRdvvxmP9nsPi6ftnfaAoJuumZExK1e590ep2Jcx2zvyU5Jdc14bleL9+uaX7Oezvr5EE63tedF5gOatrvl+XMq0HOvMnMU5mCmdefefZUYglRifEEgtttVLKy3G5rSZFTZ8BvLffanG50dVKzJXAkVSV9IqmZ7uTn/Axz5xz0rhH3b/ei9cT5ftZ233KKWv/ZRDavEE0kdeZE+3kzOtvzJvzVOAcvCcnuYo2PFxxBr+2mRmjR7qqL/59rPBzl3wCgHTlqjxQAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment>Send approval email</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="New Employee Laptop Application">1dd459ab8321e6101e5de070deaad399</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>b5de6d16-7275-4c88-8002-00a60b1e1b7e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 14:07:52</sys_created_on>
+        <sys_id>c8bc95278361e6101e5de070deaad374</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:07:52</sys_updated_on>
+        <ui_id>6df7a543-201c-439e-87c7-4a75d8e81086</ui_id>
+        <values>H4sIAAAAAAAA/+1XbW/bNhD+K4Q+e678HmefsgTBCqwt0BgdhqYQKPJkcaVElaKSukH+y37LftmOEmVJceMYdhN0gL8E0ZF3fO7ueXj0xztPcO/UG/MTfxpGYzrzR8OR758M5/NwNI/8k9ncHzDu9byUJoA7NTCl7fcNlYU14L9c5Jmkqw+NhcVCcg2pd/rxU8/LqEZnA9o7vXuwZFYZBJKGINHxQrEigdSQ1xcYY1dgtfeC6iUY8r4G+BCwPQq/uTskENaISxaW3/Pgq4GUAx4aUZlDz0toyqlRerW2aKD8XSobQyxSgyHP8lwxQQ3kxMRAIKFCklthYkJJdXzfs/G+5uIbQhgNbagIsAjMIhIpExwReS1z4GqKy6+bZRYrweBdZoRKq0IbGsq65koWSfq2ytp2BSJaSNPqSpFjXMhsmha30QXmEF3F6vZ9fe6lSMuCuASlYlSuv6gxWoQF5lk2UgLVTbyghGRj4kkgoaxxQrNMpMsg0+pGlIERZtJfSvzoR1Ldon8ulmmfMptTHwtO+5dovyjNH6gWNsE3GAad78sCBV8Ki6lKsXu43RuUfcetOdMiM2cY+AZcCvc9x/fBfBut+LihTyvms3B+YeOTt1X8XbF1nB/B6ujesTm2Dw5i+wIpbiqtVeQmxsFYM/zE7zL8EWb/cEY7oHtT+nloi33Ng4qNLrfy8Cfp/BSJ/ek0DKfhZDZqiDJnEZ+F0ZTO2Kghxi3eTTqh+nNQ3k0tJg82qewkvCed0fnVZZleb2eUtTPedLLgQP6s4W7LwPE7VArvobQh9/AgcldMJEYR7J1c4QW+Ptkam+vdxNQQkZMc29UnC0WEA9/y6JGVKkhS5Aa3GVzpyKYzE8YvohjXWme9+G7f/xeSOlQ6k+13LG2IR+PAqJZg7u6uQN9gB8g5IpRqGQz6Gr4UkOOLwkBSfwAPIqXv78mmwPYJsZ8ar7AT6bJW4g5Jr2WsNivgBJfXMZ3eRtv1Vj0yNuTWGhX+cVh0hgUHKRJRNrfS5KFk51v7Dn6n1Yw9zzunS8UdINWO5+eb+B6h4ni/q//IxZfj4mDr7zmYdnodvgwZd8BUO/72gI3hNjpOjnT82ek42d561ml2XoR/AzMtSv6lCl0+FAWj5bsxpjkJAVJrxJyBb5J2J58fMu6fzm3tuM7se9k+Qu/pcfD/TE9aurXd0bB7bym+avH4uvD9EcuIRfiLEekqYaCVMiGW4XO5yK+962ob2L/DaRrm2a+V36vMLaQuTvV55ujc3bQpiI7Tv//sF3M/wfy+ePNHLZcd6reeAlX1NsrphBKbRDYymR04BaaTyWh6FEp7DGS3fMi1yjKX20Gj4NN/t3/iCwQXAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=1dd459ab8321e6101e5de070deaad399"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=1dd459ab8321e6101e5de070deaad399^sys_idNOT IN40bc95278361e6101e5de070deaad378,61d459ab8321e6101e5de070deaad3eb,a5d459ab8321e6101e5de070deaad3e9"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">04bc95278361e6101e5de070deaad377</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="New Employee Laptop Application">1dd459ab8321e6101e5de070deaad399</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>91d5f11b-b0b8-4614-bbd7-e4d009967b31</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 14:07:52</sys_created_on>
+        <sys_id>40bc95278361e6101e5de070deaad378</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:18:04</sys_updated_on>
+        <ui_id>1ac1caf3-7b79-4620-b9f7-50e36435e588</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">848988db83e566101e5de070deaad328</block>
+        <comment/>
+        <connected_to>b5de6d16-7275-4c88-8002-00a60b1e1b7e</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="New Employee Laptop Application">1dd459ab8321e6101e5de070deaad399</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 13:33:34</sys_created_on>
+        <sys_id>61d459ab8321e6101e5de070deaad3eb</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:18:04</sys_updated_on>
+        <ui_id>91d5f11b-b0b8-4614-bbd7-e4d009967b31</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">66c6441b83e566101e5de070deaad363</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="New Employee Laptop Application">1dd459ab8321e6101e5de070deaad399</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 13:33:34</sys_created_on>
+        <sys_id>a5d459ab8321e6101e5de070deaad3e9</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:18:04</sys_updated_on>
+        <ui_id>b5de6d16-7275-4c88-8002-00a60b1e1b7e</ui_id>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8lUJnWdDTrn0LWgQo0DZAE+TSBsKKXNlEKVIlKSeu4X/vUg/baBy0KHLsTRxqd2dGs9oHunNt5+ydvrJWrFWw+voQBkJ5jJ73gYIGg1XAtOLCCa3KHgiDLcjOX9AjF7aVsLs/IWwjJDc4dmvBUI1DE6z2v125XYulhAolFd46I9SaygWnUx1DnSxZwrJ0nqVxnL7Nk2qeVUnKM0DI6L2p8N1E7s3HHglfZO3nEW6nSdpwTyuJwwCfHCqONLoGaTEMGlAcnDa7I2IQ+I2SJ2AjlBsUN/BkxU/qnRaFf7FG0shGO47HcrRqckkLhjetJzggDio5Wahl16jPgw5vMtbQSXdmcmepH7aetGcxUqpvN/rxyzTwWqhe4HgpNQN5PIEjG6rOofUfBiU21KhsoG3JnLI1eiv6YuLSRGtJh6iW+pGG+qREwDzxiDyC6Jrw9z18D0Z4FZ+oDRUPNCuwgpV9qqidMyTh0NtS/ug8oUHgKKUc3KAXLDOidVc0Z4sj60P4PJJnadzvWcExziGfLRnHWZ7nOFsui2o2L9iSQ71IF4s6Im6kDmRpHTg8HL51cZzxAaUEPIv0a7V9jb1YQlEXSVxc3ot8fmkvLmzEy8uQ/mEZ/Of7y12I4/j/Mpwvg7DlEOpRWz/8n3fhwQd/mGCH3HBkwhKRO499mP7i/mJHARDsHHrU5ruXcMIOvwBXrxHsDwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=1dd459ab8321e6101e5de070deaad399"/>
+    <sys_hub_flow_variable action="DELETE" query="model=1dd459ab8321e6101e5de070deaad399"/>
+    <sys_documentation action="DELETE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1dd459ab8321e6101e5de070deaad399</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 14:07:51</sys_created_on>
+        <sys_id>73acd1af8321e6101e5de070deaad3fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LaptopRequest" source="x_1755447_laptop_0">fd80f47683e1e2101e5de070deaad311</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:07:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1dd459ab8321e6101e5de070deaad399</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 13:33:33</sys_created_on>
+        <sys_id>ddd459ab8321e6101e5de070deaad3a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LaptopRequest" source="x_1755447_laptop_0">fd80f47683e1e2101e5de070deaad311</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 13:33:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_1dd459ab8321e6101e5de070deaad399"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_1dd459ab8321e6101e5de070deaad399"/>
+    <sys_hub_flow_snapshot action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,timeFromCreateToActivate=113126000,viewActivatedIn=diagramming</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>8ef9d20383ed26101e5de070deaad31c</copied_from>
+        <copied_from_name/>
+        <description>IT manager approve or reject the request due to the storage.</description>
+        <flow_priority/>
+        <internal_name>new_employee_laptop_application</internal_name>
+        <label_cache>[{"name":"Service Catalog_1.request_item.requested_for.email","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"b7ac81f6-ce1f-4ff2-b9c9-5aa2cd7511b5":["ah_to"]}},{"name":"Service Catalog_1.request_item.requested_for","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"requested_for","usedInstances":{"6df7a543-201c-439e-87c7-4a75d8e81086":["ah_to"]}},{"name":"Service Catalog_1.table_name","label":"Trigger - Service Catalog➛Table Name","type":"table_name","base_type":"table_name","usedInstances":{"71a77a7b-6007-49a9-88b4-78a6bb3adcda":["requested_by"]},"attributes":{"test_input_hidden":"true"}},{"name":"Service Catalog_1.request_item.sc_catalog.sys_scope","label":"Trigger - Service Catalog➛Requested Item Record➛Catalog➛Application","reference":"sys_scope","reference_display":"Application","type":"reference","base_type":"reference","parent_table_name":"sc_catalog","column_name":"sys_scope","usedInstances":{}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"c5de04a4-9cde-444e-995b-65c9daf7277f":["record"],"71a77a7b-6007-49a9-88b4-78a6bb3adcda":["requested_by","employee_name"],"b7ac81f6-ce1f-4ff2-b9c9-5aa2cd7511b5":["record"]},"attributes":{"default_search_field":"number"}},{"name":"c5de04a4-9cde-444e-995b-65c9daf7277f.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"b5de6d16-7275-4c88-8002-00a60b1e1b7e":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.46d44a23a9fe19810012d100cca80666}}","label":"Beth Anglin","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"c5de04a4-9cde-444e-995b-65c9daf7277f":["approval_conditions"]}},{"name":"Created or Updated_1.current.current","label":"Trigger - Record Created or Updated➛Record","type":"reference","base_type":"reference","usedInstances":{"c5de04a4-9cde-444e-995b-65c9daf7277f":["record"]},"attributes":{}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛laptop_request Record","reference":"x_1755447_laptop_0_laptop_request","reference_display":"laptop_request","type":"reference","base_type":"reference","usedInstances":{"c5de04a4-9cde-444e-995b-65c9daf7277f":["record"]},"attributes":{}},{"name":"Created or Updated_1.current.requested_by","label":"Trigger - Record Created or Updated➛laptop_request Record➛Requested By","reference":"","reference_display":"Requested By","type":"string","base_type":"string","parent_table_name":"x_1755447_laptop_0_laptop_request","column_name":"requested_by","usedInstances":{"0a9abd0f-d59e-465b-b9b2-5acbdf8b7708":["email_to"],"7125ee29-93f9-4861-a36b-b8f744479888":["email_to"]}}]</label_cache>
+        <master>true</master>
+        <name>New Employee Laptop Application</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="New Employee Laptop Application">1dd459ab8321e6101e5de070deaad399</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 14:08:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>53bc19278361e6101e5de070deaad3b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:08:06</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="DELETE" query="documentkey=53bc19278361e6101e5de070deaad3b6"/>
+    <sys_variable_value action="DELETE" query="document_key=53bc19278361e6101e5de070deaad3b6"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=53bc19278361e6101e5de070deaad3b6"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=53bc19278361e6101e5de070deaad3b6^sys_idNOT IN17bc19278361e6101e5de070deaad3b7"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>53bc19278361e6101e5de070deaad3b6</id>
+        <name>New Employee Laptop Application</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 14:08:06</sys_created_on>
+        <sys_id>17bc19278361e6101e5de070deaad3b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:08:06</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=17bc19278361e6101e5de070deaad3b7"/>
+    <sys_hub_flow_input action="DELETE" query="model=53bc19278361e6101e5de070deaad3b6^sys_idNOT INd3bc19278361e6101e5de070deaad3b8,e3bc19278361e6101e5de070deaad3d5"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="New Employee Laptop Application">53bc19278361e6101e5de070deaad3b6</model>
+        <model_id>53bc19278361e6101e5de070deaad3b6</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_53bc19278361e6101e5de070deaad3b6</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 14:08:06</sys_created_on>
+        <sys_id>d3bc19278361e6101e5de070deaad3b8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:08:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=d3bc19278361e6101e5de070deaad3b8"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="New Employee Laptop Application">53bc19278361e6101e5de070deaad3b6</model>
+        <model_id>53bc19278361e6101e5de070deaad3b6</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_53bc19278361e6101e5de070deaad3b6</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 14:08:06</sys_created_on>
+        <sys_id>e3bc19278361e6101e5de070deaad3d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:08:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=e3bc19278361e6101e5de070deaad3d5"/>
+    <sys_hub_flow_output action="DELETE" query="model=53bc19278361e6101e5de070deaad3b6"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=53bc19278361e6101e5de070deaad3b6"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=53bc19278361e6101e5de070deaad3b6^sys_idNOT IN6fbc19278361e6101e5de070deaad3f2"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="New Employee Laptop Application">53bc19278361e6101e5de070deaad3b6</flow>
+        <name>Service Catalog</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 14:08:06</sys_created_on>
+        <sys_id>6fbc19278361e6101e5de070deaad3f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:08:06</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/61TTW/bMAz9K4FOG5CDk6zNktswoECAbgWarpdiMGSJcoTJkifJbr2g/32kPxK3M4YB3U2iyMfHx6eHIzM8A8O27LaysyvjHmc7y+ZM2wjecnPXlICP4uC0AIx3h2sdIts+HJm656aihIyLH7l3lZWYpK5HmIowtZ2dM2bvJChemfiecncFzwmBznswICJItlXcBMDItzC+fdEhaJv3gef5iIByHv5O4GXGG9p+n7OCW8mj8805ybviDorS8AinoPMSPNsukmTOaiK6b8JOdl0tL6i/r2xKDFNNstf9NHiUOiBYc3+OiIM20oNF5ZFCyT0iRMI/vnrS1OIy2SRivdys18tktUoSdZEpoYRYf1wkl4uLDQJOr36SWHzlg/Fk8BTBypFgf6rjgcsba86BAxqsm6rgT0H/QvAPCeUpwDFEP/HpmvZqDEIQi9A60Py71eopr/aDJGSmKawXrqmnzDZIQb7ou33+/wQXbya4JIKddDdl1A7Nwla0Wp4ZqglN6BbuQWBJGr3OcyzEImeqwn6d8kXPfuTSKuC2oCRH0IqH77E/uMfbYZ1X2raU+kfjBDenG4/YOasi6XdkXNYcK8jR0WOP59YV6c+KKtp/MvRK24koIQivy/hJRF3D6dP+BvLQA67rBAAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=53bc19278361e6101e5de070deaad3b6^sys_idNOT INe3bc19278361e6101e5de070deaad3e4,e7bc19278361e6101e5de070deaad3e5,e7bc19278361e6101e5de070deaad3f2"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="New Employee Laptop Application">53bc19278361e6101e5de070deaad3b6</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 14:08:06</sys_created_on>
+        <sys_id>e3bc19278361e6101e5de070deaad3e4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:08:06</sys_updated_on>
+        <ui_id>c5de04a4-9cde-444e-995b-65c9daf7277f</ui_id>
+        <values>H4sIAAAAAAAA/+1YXY/aOBT9K8jPDJsQyATeRoNGmmq3lWDal6GKjH0DrkxCY2daNuK/703sfBRmKKzow3T6gvD1vc65h3PsmMecCE7G5DqI+jAa9Z2F6zie4wRD5gQeLLxr/9qjzCFdEtM1YGYKLEk5jp+ozIpAns8gfRIMOrdUU5ksQ7eXwtcMlA6FhvVuh8lcqI2k20+2BiNsJSRPISbjx89dsqEpLq8hJeN8b+pUfJIuQGLqtAK4D1hvN8WYJyxbQ4zgquDftnJiZzr3E5zBogKO0yXwXUPMAXFEVCrokjWNOdVJuiVjnWYYSIHyD7Hc1hkrEWvT55p+V+JffLDXL/IiwMaY5aAehpYfE44mSOQMV2Y6S2u6EqRYGUo4RDST+rYdMwkfNloksSnRdCGr6kRm6/i9IYTUC7R+jkwhCNgUfRbITVvRbJV8m1Yg70RcMmJblAmjsh5RrVOxyHQBJycgoaR4TTcbES/DTZo8ibIYoax7S4mDXiSTb/hMJZZxj7ICdw9Zpb07jE/K8CeaiqKJf3AZLN51idqqW0mValpBDsOvWYHENGZbCEsWDAVFHUvFRt/gU57AYt51rfYX7Ki2WCMls1wjfcVCVHqp8kONT40HgHfuzfx5ij8BVaX4BwtrD6XVezkMy7kf5V6Wdd6bCat297jabaSRu9HJM2oPnFekdtvWq5f7z5QOA98b4sd15Dlu33UC8IOAjRzKAt8fDrxGQ4gAe6AS9U0Vrt1o/gKb+QkwKmnfWBydaYXjRYBW7gp/mHi5J/VZFbQy758p85d3ddd/S0LPxMMeyyZywPOvcUTxuI+xwH31vtCR31/4IyfgVzxyFleDwBteUQbOFfjuEIbcZ0PX+wUuctxjOzMPnhFpJEC235mqiUMztWbOM9UJqA5MdWdhvQTXWqocPneClPV7J8jlrBU4zmvy1lt6ZWJHxQatg+RLkqXxEQeEK6FKZbzohFbGeY44AWTliHcG5b4h9sH/Hz94f/zw+/thMDwqtdbLea1qlsRcFIhVyxVmZwY1hS/AtLqJtx8f81xpqgXrDXw+GNC+R0cRuKMAn+T2OX4yRgPH9/3d7vOhiy6w4nmuO4GK+qaeSVA/o8Z6rnnfs0Vt3zVviXbSem9wqbv7K7PeW7nPsKNai0aNtniGBFHdvrznc2Jgz8l4TuIkhjnpzkmRFRbiKsOYgeDqiTKW57udiWQptQu4rWFTzelWlZmKrYCjNsvoD5GwNIONX+KfshM4qfw3yaAzMaQc0lRdpyqchhdxcObNbEK50l8Pon32DS929g3+2O8Sl6ewvl7gwYa73+U8WQUL/LWK8Ptz9sVj5T/W9VhneBYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment>Send approval email</comment>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="New Employee Laptop Application">53bc19278361e6101e5de070deaad3b6</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>b5de6d16-7275-4c88-8002-00a60b1e1b7e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 14:08:06</sys_created_on>
+        <sys_id>e7bc19278361e6101e5de070deaad3e5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:08:06</sys_updated_on>
+        <ui_id>6df7a543-201c-439e-87c7-4a75d8e81086</ui_id>
+        <values>H4sIAAAAAAAA/+2X7W7bNhSGb4XQb8+Vv+PsV2YjWIG0BeqgxdAUAkVSNldKVEkqqRvkXnYtu7IeStSXnbl24mEJlj9BdPj1nsP30ZE/3XqceqfekJ744zAa4ok/6A98/6Q/nYaDaeSfTKZ+j1Cv4yU4ZjBTMSKVfb7GIrMB+JdynQq8/lBHyIoLqljinX763PFSrGCxYco7vd0Y2vd0gUMmYOolVktm0PtSxaYqs07tM5Uki1liAl4GL9wGczeCXs9hBBZZVX7HY98MSygDOREWmnW8GCcUG6nWVUQxTN8log6seGJgyzOtJeHYMI3MiiEWYy7QDTcrhFEhrOvZ/b5p/h3EDfp2q4hBDYjVyhPCKSjyGuHAlRSGX9fD0RwbvDAqIyZTVaUlJ0wX1aQswpkws2asmPAuNVwmxRKDQ1GuliKLk7dFEb1qg8ZNZhrEsNTWxiYLh0Pi0WIlb96XYs95klfRVUVIgkX1FC0YVmR1zpmwV51kcQhzOx42RvEwM1YmmELArPqcIJdqz4KZTLD8KmOcpjxZBqmS1zw/EOTH3aWAh24k5A2s13yZdDGxuXbh9nD3HOLzPPwBK24TfwPbwOK7jqfXeiaw1nX6UP/ga2bVF8Voy7Grg9xwdjFRPDVncNQ1c8nedRxNvekuP9Nh7dvGnkclag8FNVHWDfcrcjRtxS6aa9HbYsCx1DuQpcJRDqVL4McUiBfkIOPkVfic+G18/gGbp4FLBcHevLS5+He8DybRQWFgl1t++AOY+BkJ/ngchuNwNBnUPpySiE7CaIwnZFD77gbenyrG6kuQvz8bOPS2eXBvhsOY2ENLyQS8c0VGGfpYitql00ESSgkvsWSTEFD66jyvbkVI/1HdprAmMhLBZYo19JhKkg3WHcissEFcIw231UWXEnGXVWNFB61lhuJMG5hmYKQFX6ttDZ8ud84OLjq/1yvPAszjAzja3QhwbWy8CoxsYHd7u2DqGu4EzUCzkMug11Xsa8Y0fFUZFpcPjAaRVHd3aBvTh2xxGNN7pFf1Obmdq0NXw80myw1yF2XQUTvYTW3RxragbbQt/+kC9Fz4sMIFj3luiILs4yNDd3qK+S0bEXLcD7c9Di8NPZttKznE0MOHtaEXRz87R/d2/r5m45aPwmNbeo/TS0v/tuHp8GBTj15M/T8x9Wi3rUjLSDoL/2TENIz9h8xU/gXNCc4/qFdYo5CxxAahCoxuW3+vNQd+wPw8ixKORZXDfXkdAsn45VPmP2fk+EDgnVaK+u03q6TrBg1Xme8PSIqs5l8MT9YxYUpKE0JhvuSD9Mq7KqYx+7c/TkKd/lqse5W6gcTtUzyeOSjak7axai36+6+H7XkYdnvUqupJRaW2SueAW5lYbOD2++Wbixq2ySM70ng0GoxfcHt0S0pvaJ8qmaYutyO3pc8/AOKPDOlLGQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment>Send rejected email</comment>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="New Employee Laptop Application">53bc19278361e6101e5de070deaad3b6</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>91d5f11b-b0b8-4614-bbd7-e4d009967b31</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 14:08:06</sys_created_on>
+        <sys_id>e7bc19278361e6101e5de070deaad3f2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:08:06</sys_updated_on>
+        <ui_id>b7ac81f6-ce1f-4ff2-b9c9-5aa2cd7511b5</ui_id>
+        <values>H4sIAAAAAAAA/+2X327bNhTGX4XQtefKdmzH2VUXI1iAtAXioMPQFAJFUjZXSlRJKq4b+F32LHuyHUrUPztz7cTDEiw3BkTykN85/H468qd7j1PvzDuhp/4ojE7w2B/0B75/2p9MwsEk8k/HE79HqNfxEhwzWKkYkco+32GR2YH7+xlTd5wwdI4NFnIe9LqKfc2YNgE3LF6vYTHlOhV49dHFwAhZcEEVS7yzT587XooVbG+Y8s7uN6b21SdwyAQsvcFqzgy6LnVu6jar1D5TSbKYJaCxHLxyG0zdDLqcwgwEWVV+x2PfDEsoAzkRFpp1vBgnFBupVtWIYph+SEQ9sOCJgS3fai0Jx4ZpZBYMsRhzgZbcLBBGhbCuZ/f7pvl3EDfo260iBjUgVitPCKegyGsMB66kMH1ZT0dTuIOZURkxmaoqLeF2dFFNyiKcCXPeHCsWfEgNl0kRYnAoymgpsjh5XxTRqzZo3GSmQQxLbW1ssnA4JB7NFnJ5XYq94EleRVcVIQkW1VM0Y1iRxQVnwl51ksUhrO142BjFw8xYmWAKAavqc4Jcqj0LVjLB8quMcZryZB6kSt7x/ECQH3fnAh66kZBLiNd8nnQxsbl24fZw9wLGp/nwR6y4TfwdbAPB646nV/pcYK3r9KH+wdfMqi+K0ZZjo4PccDaYKJ6at3DUHXPJrjuOt95kl5/pSe3bxp41c5oEgFiO1zZc1wV8jKLLYv4w1PaQVqNmbfKwVIfZ1thVMxa9LyYcZL0DISus5hi7AbBMwX6BFDJOXsXVqd/m6h94eh4cVXTsDVIbmH8HCjCJDgpnu9zywx8By48Q8UejMByFw/Gg9uGERHQcRiM8JoPad0t4saoYqy9B/mJtcNLbpsO9Mg5jYg8tJRPwMhYZZei3UtQunQ6SUEp4uyWbhIDSNxd5dStC+k9qQ4U1kZEILlOsoPlUkuxg3ZrMAhvENdJwW110IxF3WTUiOmglMxRn2sAyAzMt+Fr97OT5cufs4EanD3rlRYB5fACHuxsBro2NF4GRB3wSlg+MBpFU3dxz6zXahvXxGx3G9x6pVj1PbuftMNZwy8l8g+JZOegIHuwmuGhpWwA3Wpj/fGF6KaxY4YLHPDdEQfnx8aE7PcX8lo0IaeBzhP9LexxeGvr8fFvJIYY+eVxLenX0i3N0b+efcDZq+Sg8tqX3OL209C8bng4PNvXw1dT/E1MPd9uKtIyks/APRkzD2L/LTOVf05zg/ON6gTUKGUvgO9guZXTb+nvFHPgB8+MsSjhmVQ4P5XUIJKPXT5n/nJHjA4F3Winqt9+skq4aNNxmvj8gKbKafzI8WcWEKSlNCIX5kk/SW++2WMbsb3+UhDr9uYh7k7qJxO1TPF47KNqLtrFqBf315+P2PAy7PWpV9aSiUlulc8AtTCw2cPv15t1VDdv4iR1pNBwORq+4PbklpUvap0qmqcvtyG3p89+99WB3khkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=53bc19278361e6101e5de070deaad3b6"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=53bc19278361e6101e5de070deaad3b6^sys_idNOT IN27bc19278361e6101e5de070deaad3e2,a3bc19278361e6101e5de070deaad3e3,efbc19278361e6101e5de070deaad3e0"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">848988db83e566101e5de070deaad328</block>
+        <comment/>
+        <connected_to>b5de6d16-7275-4c88-8002-00a60b1e1b7e</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="New Employee Laptop Application">53bc19278361e6101e5de070deaad3b6</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 14:08:06</sys_created_on>
+        <sys_id>27bc19278361e6101e5de070deaad3e2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:08:06</sys_updated_on>
+        <ui_id>91d5f11b-b0b8-4614-bbd7-e4d009967b31</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">04bc95278361e6101e5de070deaad377</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="New Employee Laptop Application">53bc19278361e6101e5de070deaad3b6</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>91d5f11b-b0b8-4614-bbd7-e4d009967b31</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 14:08:06</sys_created_on>
+        <sys_id>a3bc19278361e6101e5de070deaad3e3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:08:06</sys_updated_on>
+        <ui_id>1ac1caf3-7b79-4620-b9f7-50e36435e588</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">66c6441b83e566101e5de070deaad363</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="New Employee Laptop Application">53bc19278361e6101e5de070deaad3b6</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 14:08:06</sys_created_on>
+        <sys_id>efbc19278361e6101e5de070deaad3e0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:08:06</sys_updated_on>
+        <ui_id>b5de6d16-7275-4c88-8002-00a60b1e1b7e</ui_id>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPjvFnMuetpBQG3Qpr6ctWzLUkJ2Ky5Uly0szkv+/KdpywZmxlfdybdaR7dc7RPbgjqrVNa82DujJGrGuy/PLkEVE7DL87UkPFyZJQVTNhharzHvDIFmTrNvCTCdNI2D+eELoRkmk+dmtAY43lmiy7X7YEw4IygDLMaEjjaB5HQRC9T8JiHhdhxGLgEGNDCQWXeHR1pPHutke83/Kz+8bhxmpRr8f17djl/ggqzRyrMPAIf7a8Zhz5lCAN90gFNQOr9H5CNAd2V8sTsBG1HQRX8GzED7wwSlN3sOQokY5uTMt8dGqAy2uwgFRaals9GacE5WYwh/ESWmlX59hw4K5xUocSC4U8VivZVvWnwREyNTh7mNYgCd44pY76qKO836jd5yPLG1H3roybUlGQ0wosele01vHpCJe8wkZ5BU2DjuaNVlvRFyOXyl9LXPilVDu81E2XD9QR99FY8G8Qv+7hR9DCqfiIbbB4oFmAETTvJxHboU2cHDxi9mYlwZiTSHQ3/946ioPkUVw++ONKqBaNvcKbt3zUcfBeDvbZTHcdTRkPEkhmGWV8liQJn2VZWszmKc0YlItosSh9ZIt6QebGguWHw9c2CGI2oDhIL4LxVm1fl64M0jINg/RyupL5pXRdyNUrIxX9IVLuPf8yUUEQ/I/UP0dKmHwIwqitv/wNE/Xk4jPcOXlNhUFqDw77cPyjuI09Dpeg59BO6W9O1Ak7/ASia+btmwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=53bc19278361e6101e5de070deaad3b6"/>
+    <sys_hub_flow_variable action="DELETE" query="model=53bc19278361e6101e5de070deaad3b6"/>
+    <sys_documentation action="DELETE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_53bc19278361e6101e5de070deaad3b6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 14:08:06</sys_created_on>
+        <sys_id>2bbc19278361e6101e5de070deaad3d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LaptopRequest" source="x_1755447_laptop_0">fd80f47683e1e2101e5de070deaad311</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:08:06</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_53bc19278361e6101e5de070deaad3b6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 14:08:06</sys_created_on>
+        <sys_id>6bbc19278361e6101e5de070deaad3d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LaptopRequest" source="x_1755447_laptop_0">fd80f47683e1e2101e5de070deaad311</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:08:06</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_53bc19278361e6101e5de070deaad3b6"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_53bc19278361e6101e5de070deaad3b6"/>
+    <sys_hub_flow action="DELETE">
+        <sys_id>1dd459ab8321e6101e5de070deaad399</sys_id>
+        <latest_snapshot>53bc19278361e6101e5de070deaad3b6</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=1dd459ab8321e6101e5de070deaad399^sys_idNOT INfbbc59278361e6101e5de070deaad306"/>
+    <sys_flow_trigger_plan action="DELETE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan/>
+        <plan_id>1dd459ab8321e6101e5de070deaad399</plan_id>
+        <snapshot>53bc19278361e6101e5de070deaad3b6</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 14:08:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fbbc59278361e6101e5de070deaad306</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:08:07</sys_updated_on>
+        <trigger display_value="">f3bc59278361e6101e5de070deaad306</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=1dd459ab8321e6101e5de070deaad399"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</application>
+        <file_path/>
+        <instance_id>b1c671171be64e18168f4089bd4bcb1f</instance_id>
+        <instance_name>dev274192</instance_name>
+        <name>sys_hub_flow_1dd459ab8321e6101e5de070deaad399</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=integrated,timeFromCreateToActivate=2072000,viewActivatedIn=diagramming&lt;/attributes&gt;&lt;authored_on_release_version&gt;27000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from&gt;8ef9d20383ed26101e5de070deaad31c&lt;/copied_from&gt;&lt;copied_from_name&gt;IT manager approval&lt;/copied_from_name&gt;&lt;description&gt;IT manager approve or reject the request due to the storage.&lt;/description&gt;&lt;display_name_after_preview/&gt;&lt;flow_priority/&gt;&lt;generation_source/&gt;&lt;internal_name&gt;new_employee_laptop_application&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"Created or Updated_1.current.requested_by","label":"Trigger - Record Created or Updated➛laptop_request Record➛Requested By","reference":"","reference_display":"Requested By","type":"string","base_type":"string","parent_table_name":"x_1755447_laptop_0_laptop_request","column_name":"requested_by","usedInstances":{"0a9abd0f-d59e-465b-b9b2-5acbdf8b7708":["email_to"],"7125ee29-93f9-4861-a36b-b8f744479888":["email_to"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛laptop_request Record","reference":"x_1755447_laptop_0_laptop_request","reference_display":"laptop_request","type":"reference","base_type":"reference","usedInstances":{"c5de04a4-9cde-444e-995b-65c9daf7277f":["record"]},"attributes":{}},{"name":"Created or Updated_1.current.current","label":"Trigger - Record Created or Updated➛Record","type":"reference","base_type":"reference","usedInstances":{"c5de04a4-9cde-444e-995b-65c9daf7277f":["record"]},"attributes":{}},{"name":"{{static.46d44a23a9fe19810012d100cca80666}}","label":"Beth Anglin","reference":"sys_user","type":"reference","base_type":"reference","usedInstances":{"c5de04a4-9cde-444e-995b-65c9daf7277f":["approval_conditions"]}},{"name":"c5de04a4-9cde-444e-995b-65c9daf7277f.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"b5de6d16-7275-4c88-8002-00a60b1e1b7e":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"c5de04a4-9cde-444e-995b-65c9daf7277f":["record"],"71a77a7b-6007-49a9-88b4-78a6bb3adcda":["requested_by","employee_name"],"b7ac81f6-ce1f-4ff2-b9c9-5aa2cd7511b5":["record"]},"attributes":{"default_search_field":"number"}},{"name":"Service Catalog_1.request_item.sc_catalog.sys_scope","label":"Trigger - Service Catalog➛Requested Item Record➛Catalog➛Application","reference":"sys_scope","reference_display":"Application","type":"reference","base_type":"reference","parent_table_name":"sc_catalog","column_name":"sys_scope","usedInstances":{}},{"name":"Service Catalog_1.table_name","label":"Trigger - Service Catalog➛Table Name","type":"table_name","base_type":"table_name","usedInstances":{"71a77a7b-6007-49a9-88b4-78a6bb3adcda":["requested_by"]},"attributes":{"test_input_hidden":"true"}},{"name":"Service Catalog_1.request_item.requested_for","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"requested_for","usedInstances":{"6df7a543-201c-439e-87c7-4a75d8e81086":["ah_to"]}},{"name":"Service Catalog_1.request_item.requested_for.email","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"b7ac81f6-ce1f-4ff2-b9c9-5aa2cd7511b5":["ah_to"]}},{"name":"{{static.62826bf03710200044e0bfc8bcbe5df1}}","label":"Abel Tuter","reference":"sys_user","type":"reference","base_type":"reference","usedInstances":{"c5de04a4-9cde-444e-995b-65c9daf7277f":["approval_conditions"]}}]&lt;/label_cache&gt;&lt;master_snapshot&gt;53bc19278361e6101e5de070deaad3b6&lt;/master_snapshot&gt;&lt;master_snapshot_digest/&gt;&lt;name&gt;New Employee Laptop Application&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id&gt;f3bc59278361e6101e5de070deaad306&lt;/remote_trigger_id&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;draft&lt;/status&gt;&lt;substatus/&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 13:33:33&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;1dd459ab8321e6101e5de070deaad399&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;New Employee Laptop Application&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="LaptopRequest" source="x_1755447_laptop_0"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="LaptopRequest"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_1dd459ab8321e6101e5de070deaad399&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:18:04&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=1dd459ab8321e6101e5de070deaad399"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=1dd459ab8321e6101e5de070deaad399"/&gt;&lt;sys_flow_catalog_trigger action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;catalog_item/&gt;&lt;name/&gt;&lt;published_version/&gt;&lt;run_flow_in&gt;background&lt;/run_flow_in&gt;&lt;sys_class_name&gt;sys_flow_catalog_trigger&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 14:08:07&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f3bc59278361e6101e5de070deaad306&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:08:07&lt;/sys_updated_on&gt;&lt;trigger_definition/&gt;&lt;/sys_flow_catalog_trigger&gt;&lt;sys_trigger_runner_mapping action="delete_multiple" query="identifier=1dd459ab8321e6101e5de070deaad399"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=1dd459ab8321e6101e5de070deaad399"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=1dd459ab8321e6101e5de070deaad399^sys_idNOT IN95d459ab8321e6101e5de070deaad39a"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;1dd459ab8321e6101e5de070deaad399&lt;/id&gt;&lt;name&gt;New Employee Laptop Application&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 13:33:33&lt;/sys_created_on&gt;&lt;sys_id&gt;95d459ab8321e6101e5de070deaad39a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 13:33:33&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=95d459ab8321e6101e5de070deaad39a"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=1dd459ab8321e6101e5de070deaad399^sys_idNOT INd9d459ab8321e6101e5de070deaad39f,f3acd1af8321e6101e5de070deaad3f8"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;sc_req_item&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="New Employee Laptop Application"&gt;1dd459ab8321e6101e5de070deaad399&lt;/model&gt;&lt;model_id&gt;1dd459ab8321e6101e5de070deaad399&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_1dd459ab8321e6101e5de070deaad399&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 13:33:33&lt;/sys_created_on&gt;&lt;sys_id&gt;d9d459ab8321e6101e5de070deaad39f&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="LaptopRequest"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:18:04&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d9d459ab8321e6101e5de070deaad39f"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;request_item&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;Request Item&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="New Employee Laptop Application"&gt;1dd459ab8321e6101e5de070deaad399&lt;/model&gt;&lt;model_id&gt;1dd459ab8321e6101e5de070deaad399&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_1dd459ab8321e6101e5de070deaad399&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="sc_req_item"&gt;sc_req_item&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 14:07:51&lt;/sys_created_on&gt;&lt;sys_id&gt;f3acd1af8321e6101e5de070deaad3f8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="LaptopRequest"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:07:51&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f3acd1af8321e6101e5de070deaad3f8"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=1dd459ab8321e6101e5de070deaad399"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=1dd459ab8321e6101e5de070deaad399"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=1dd459ab8321e6101e5de070deaad399^sys_idNOT IN08bc95278361e6101e5de070deaad36f"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="New Employee Laptop Application"&gt;1dd459ab8321e6101e5de070deaad399&lt;/flow&gt;&lt;name&gt;Service Catalog&lt;/name&gt;&lt;published_version/&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 14:07:52&lt;/sys_created_on&gt;&lt;sys_id&gt;08bc95278361e6101e5de070deaad36f&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:08:05&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Service Catalog"&gt;c43a1011c36813002841b63b12d3ae15&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;H4sIAAAAAAAA/61TTW/bMAz9K4FOG5CDk6zNktswoECAbgWarpdiMGSJcoTJkifJbr2g/32kPxK3M4YB3U2iyMfHx6eHIzM8A8O27LaysyvjHmc7y+ZM2wjecnPXlICP4uC0AIx3h2sdIts+HJm656aihIyLH7l3lZWYpK5HmIowtZ2dM2bvJChemfiecncFzwmBznswICJItlXcBMDItzC+fdEhaJv3gef5iIByHv5O4GXGG9p+n7OCW8mj8805ybviDorS8AinoPMSPNsukmTOaiK6b8JOdl0tL6i/r2xKDFNNstf9NHiUOiBYc3+OiIM20oNF5ZFCyT0iRMI/vnrS1OIy2SRivdys18tktUoSdZEpoYRYf1wkl4uLDQJOr36SWHzlg/Fk8BTBypFgf6rjgcsba86BAxqsm6rgT0H/QvAPCeUpwDFEP/HpmvZqDEIQi9A60Py71eopr/aDJGSmKawXrqmnzDZIQb7ou33+/wQXbya4JIKddDdl1A7Nwla0Wp4ZqglN6BbuQWBJGr3OcyzEImeqwn6d8kXPfuTSKuC2oCRH0IqH77E/uMfbYZ1X2raU+kfjBDenG4/YOasi6XdkXNYcK8jR0WOP59YV6c+KKtp/MvRK24koIQivy/hJRF3D6dP+BvLQA67rBAAA&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;service_catalog&lt;/trigger_type&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=1dd459ab8321e6101e5de070deaad399^sys_idNOT IN4cbc95278361e6101e5de070deaad376,a1d459ab8321e6101e5de070deaad3ec,c8bc95278361e6101e5de070deaad374"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Send Email"&gt;c1806bf4a70323008299b39f087901cb&lt;/action_type&gt;&lt;action_type_parent display_value="Send Email"&gt;98c181d20b100300d97d8bf637673ab5&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Send rejected email&lt;/comment&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="New Employee Laptop Application"&gt;1dd459ab8321e6101e5de070deaad399&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;5&lt;/order&gt;&lt;parent_ui_id&gt;91d5f11b-b0b8-4614-bbd7-e4d009967b31&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 14:07:52&lt;/sys_created_on&gt;&lt;sys_id&gt;4cbc95278361e6101e5de070deaad376&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="LaptopRequest"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:07:52&lt;/sys_updated_on&gt;&lt;ui_id&gt;b7ac81f6-ce1f-4ff2-b9c9-5aa2cd7511b5&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+1X3W7bNhR+FULXniv/x9lVlyBYgLUFEqPF0BQCRR5ZXClRpaikbuB32bPsyXooUZYVN45nZ0EH+EYAD3n+v4+H+njvCe6dekN+4o/DaEgn/qA/8P2T/nQaDqaRfzKZ+j3GvY6X0gTwpAamtF3fUllYwf39NehbwYCcUUOlmge9roYvBeQmEAaS5RIPc5Fnki7eOx2UsFhIriH1Tj9+6ngZ1WjegPZO7x9smUUGgaQhSFQ8V6xIIDXk8hxt7Bp6rT2jeg6GXNUpPEzJusI1d04CYYW4ZcPyOx58NZByQKcRlTl0vISmnBqlFyuJBsrfpbIRxCI1aPJ1nismqIGcmBgIJFRIcidMTCip3Hc9a+9rLr5hCIO+NRUBFoHZiETKBMeIvDVx4GqK25fNNosVtuJdZoRKq0IbGsq65koWSfq2ytp2BSJaSLPWlSJHu5DZNG3cRheYQ3Qdq7ur2u+FSMuCuASlYlSuVtQYLcIC8ywbKYHqxl5QhmRtoieQUNY4oVkm0nmQaXUrSsMYZtKdS1x0I6nuUD8X87RLmc2piwWn3QuUn5fi91QLm+AbNIPKy7JAwZfCxlSl2HZuzwZl3/FozrTIzGs0fAsuhWXHMaI33QYrPmzgs2azYUXOAiRBSYBN+F9V9ABOLqv9/cgws47J28rxrkG3lB9JwvGgJXM06B1Egxli31QkrFBPjAtjBf0Tvw39RyD/7FB3ge6N9f8Gz9jXPKhg6nIrnT+J86fQ7Y/HYTgOR5NBA5Qpi/gkjMZ0wgYNMO7w0tIJ1Z+D8tJag3hvE9iO23vCGZVfXZTpdXaOslbGK1AWHMiHOtxtGTh8h0rhBZU24O4fBO4KicQogr2TC7zZV56tsLn3TUwNETnJsV1dMlNEuODXNDpkoQqSFLnBYwZ3WrRpDYvhizDGtdZJz3/Y9/8FpQ6lzmj7HUsb4NE4MOpfvJTqBfAgUrpbgmW5JJs029/Qfsy8xq6k85qVOxRgRWm1WQ1Hvry26bg32M696iWyQb21seEfB0drcHCQIhFlcyt+Hgp8vrXv4Ldazdga8J/xB6ANxR1CqhXPzjbjewSKw/3GwBGLL4fF3tafPhi3eh2+DBh3iKlW/O0BGsNtcBwd4fizw3G0vfWs1ey8CP8CZtYg+acqdPloFIyWb8iY5iQESPG5Z48C3wTtTjrPMu6fzm2luMrsR9k+Au/xcfD/TM9burXdUb99bym+WMPxTeH7A5YRG+EvRqSLhIFWyoRYhs/lJr/xbqpjYL/9cRrm2a+V3qvMbaTOTrW8cnBuH9okREvpn7/3s7kfYX6fvfmjpssO9VtNgap6G+V0RIlNIhuaTA6cAuPRaDA+EmV9DGR3vM+1yjKX20Gj4NN30DLSDEsXAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Ask For Approval"&gt;f8f2e9920b10030085c083eb37673abd&lt;/action_type&gt;&lt;action_type_parent display_value="Ask For Approval"&gt;bae0a1120b10030085c083eb37673a92&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;f8f2e9920b10030085c083eb37673abd&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="New Employee Laptop Application"&gt;1dd459ab8321e6101e5de070deaad399&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 13:33:34&lt;/sys_created_on&gt;&lt;sys_id&gt;a1d459ab8321e6101e5de070deaad3ec&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="LaptopRequest"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:07:52&lt;/sys_updated_on&gt;&lt;ui_id&gt;c5de04a4-9cde-444e-995b-65c9daf7277f&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+1YUW/bOAz+K4Gf05wcO66Tt+KKAj3c3YC020szGIpEJxoUObPkbjkj/32ULSdu0npBL4fehr0EESWSH8mPtOyH0hPcm3iXcTqE8XhI5j4hASHxiJE4gHlwGV0GlBGv7ym6AjyZA8tyjutHKgsrKMs7yB8Fg97v1FCZLRJ/kMPnArRJhIHVdouHudBrSTcfnA5K2FJInoPyJg8f+96a5mjeQO5NyoMts1lDIukcJCpeZ6xYgTK922u0cSr0RnvaYD+MxfrANXfWE2GFuGXxkL4HXw0oDugtpVJD31tRxanJ8o03MXmBghwof6fkZndiKZSpA13Rr1r8g+aDoT2XAkbGXBJ2y8QlqMlNhvl8tzYiU7XE0LlsEpfJYqX+riOwqYWUFtK0UltotAdrC9mCqBGmd8vsy7TxdyNUFZxDKzNG5W5FjcnFvDCgbTVAQpWTFV2vhVok6zx7FJUyQlkNFhIXg1RmX9CnFgs1oMziHmCC6OAG5deV+APNhQ3iLzSDytsq+ORzYf3WYTjASRVzHTCe0iwXa3OFNh/BIdz2HWvnrLP0bF/p2tyetJolyNGKn8fsnNbsBd67rfdfx9V767NXFap/Mt4nysf4HVGrZaJq046nfjdPneQUosbkbYjqEP1gTP0eSSGMghH+XKYB8Yc+iSGKYzYmlMVRNAqDfZHRHyKmEqlJNdre0/WME/QOM6YWDSNPANcoXjl0vWmD7kXYjqW6ceUYOjwbQ/3oB6VoIe4PclNL/jyszn/DZevuvRI43m5t9aPhPBqTmF/wlMwvwjgYXVAG5AIifwQjHrGRH/xr/hO/a+jx+BkipQJk+4rRbBy3QWvnde1wY109GdIn4D1qiRsH+KVAXENUy4Oxfb6miAl5o674eW8YrJMM0Bren7IiVx3cTZZCVyV9kcOtE+fi8gnwG+U/avyHVD4Mq4PJwS8m/4+ZHI46qQDPTC+WKS4sPt3icz3zQE/hEzCjr9Tm/UNZakONYIMw4mFIhwEdp+CPY/TkDzn+MkZjEkXRdvvxmP9nsPi6ftnfaAoJuumZExK1e590ep2Jcx2zvyU5Jdc14bleL9+uaX7Oezvr5EE63tedF5gOatrvl+XMq0HOvMnMU5mCmdefefZUYglRifEEgtttVLKy3G5rSZFTZ8BvLffanG50dVKzJXAkVSV9IqmZ7uTn/Axz5xz0rhH3b/ei9cT5ftZ233KKWv/ZRDavEE0kdeZE+3kzOtvzJvzVOAcvCcnuYo2PFxxBr+2mRmjR7qqL/59rPBzl3wCgHTlqjxQAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Send Email"&gt;c1806bf4a70323008299b39f087901cb&lt;/action_type&gt;&lt;action_type_parent display_value="Send Email"&gt;98c181d20b100300d97d8bf637673ab5&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Send approval email&lt;/comment&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="New Employee Laptop Application"&gt;1dd459ab8321e6101e5de070deaad399&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id&gt;b5de6d16-7275-4c88-8002-00a60b1e1b7e&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 14:07:52&lt;/sys_created_on&gt;&lt;sys_id&gt;c8bc95278361e6101e5de070deaad374&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="LaptopRequest"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:07:52&lt;/sys_updated_on&gt;&lt;ui_id&gt;6df7a543-201c-439e-87c7-4a75d8e81086&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+1XbW/bNhD+K4Q+e678HmefsgTBCqwt0BgdhqYQKPJkcaVElaKSukH+y37LftmOEmVJceMYdhN0gL8E0ZF3fO7ueXj0xztPcO/UG/MTfxpGYzrzR8OR758M5/NwNI/8k9ncHzDu9byUJoA7NTCl7fcNlYU14L9c5Jmkqw+NhcVCcg2pd/rxU8/LqEZnA9o7vXuwZFYZBJKGINHxQrEigdSQ1xcYY1dgtfeC6iUY8r4G+BCwPQq/uTskENaISxaW3/Pgq4GUAx4aUZlDz0toyqlRerW2aKD8XSobQyxSgyHP8lwxQQ3kxMRAIKFCklthYkJJdXzfs/G+5uIbQhgNbagIsAjMIhIpExwReS1z4GqKy6+bZRYrweBdZoRKq0IbGsq65koWSfq2ytp2BSJaSNPqSpFjXMhsmha30QXmEF3F6vZ9fe6lSMuCuASlYlSuv6gxWoQF5lk2UgLVTbyghGRj4kkgoaxxQrNMpMsg0+pGlIERZtJfSvzoR1Ldon8ulmmfMptTHwtO+5dovyjNH6gWNsE3GAad78sCBV8Ki6lKsXu43RuUfcetOdMiM2cY+AZcCvc9x/fBfBut+LihTyvms3B+YeOTt1X8XbF1nB/B6ujesTm2Dw5i+wIpbiqtVeQmxsFYM/zE7zL8EWb/cEY7oHtT+nloi33Ng4qNLrfy8Cfp/BSJ/ek0DKfhZDZqiDJnEZ+F0ZTO2Kghxi3eTTqh+nNQ3k0tJg82qewkvCed0fnVZZleb2eUtTPedLLgQP6s4W7LwPE7VArvobQh9/AgcldMJEYR7J1c4QW+Ptkam+vdxNQQkZMc29UnC0WEA9/y6JGVKkhS5Aa3GVzpyKYzE8YvohjXWme9+G7f/xeSOlQ6k+13LG2IR+PAqJZg7u6uQN9gB8g5IpRqGQz6Gr4UkOOLwkBSfwAPIqXv78mmwPYJsZ8ar7AT6bJW4g5Jr2WsNivgBJfXMZ3eRtv1Vj0yNuTWGhX+cVh0hgUHKRJRNrfS5KFk51v7Dn6n1Yw9zzunS8UdINWO5+eb+B6h4ni/q//IxZfj4mDr7zmYdnodvgwZd8BUO/72gI3hNjpOjnT82ek42d561ml2XoR/AzMtSv6lCl0+FAWj5bsxpjkJAVJrxJyBb5J2J58fMu6fzm3tuM7se9k+Qu/pcfD/TE9aurXd0bB7bym+avH4uvD9EcuIRfiLEekqYaCVMiGW4XO5yK+962ob2L/DaRrm2a+V36vMLaQuTvV55ujc3bQpiI7Tv//sF3M/wfy+ePNHLZcd6reeAlX1NsrphBKbRDYymR04BaaTyWh6FEp7DGS3fMi1yjKX20Gj4NN/t3/iCwQXAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=1dd459ab8321e6101e5de070deaad399"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=1dd459ab8321e6101e5de070deaad399^sys_idNOT IN40bc95278361e6101e5de070deaad378,61d459ab8321e6101e5de070deaad3eb,a5d459ab8321e6101e5de070deaad3e9"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;04bc95278361e6101e5de070deaad377&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="New Employee Laptop Application"&gt;1dd459ab8321e6101e5de070deaad399&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="End"&gt;d176605ea76103004f27b0d2187901c7&lt;/logic_definition&gt;&lt;order&gt;6&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id&gt;91d5f11b-b0b8-4614-bbd7-e4d009967b31&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 14:07:52&lt;/sys_created_on&gt;&lt;sys_id&gt;40bc95278361e6101e5de070deaad378&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="LaptopRequest"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:18:04&lt;/sys_updated_on&gt;&lt;ui_id&gt;1ac1caf3-7b79-4620-b9f7-50e36435e588&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;848988db83e566101e5de070deaad328&lt;/block&gt;&lt;comment/&gt;&lt;connected_to&gt;b5de6d16-7275-4c88-8002-00a60b1e1b7e&lt;/connected_to&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="New Employee Laptop Application"&gt;1dd459ab8321e6101e5de070deaad399&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="Else"&gt;1f781bf3c32232002841b63b12d3aee6&lt;/logic_definition&gt;&lt;order&gt;4&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 13:33:34&lt;/sys_created_on&gt;&lt;sys_id&gt;61d459ab8321e6101e5de070deaad3eb&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_scope display_value="LaptopRequest"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:18:04&lt;/sys_updated_on&gt;&lt;ui_id&gt;91d5f11b-b0b8-4614-bbd7-e4d009967b31&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;66c6441b83e566101e5de070deaad363&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="New Employee Laptop Application"&gt;1dd459ab8321e6101e5de070deaad399&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;2&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 13:33:34&lt;/sys_created_on&gt;&lt;sys_id&gt;a5d459ab8321e6101e5de070deaad3e9&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_scope display_value="LaptopRequest"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:18:04&lt;/sys_updated_on&gt;&lt;ui_id&gt;b5de6d16-7275-4c88-8002-00a60b1e1b7e&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+1Uy27bMBD8lUJnWdDTrn0LWgQo0DZAE+TSBsKKXNlEKVIlKSeu4X/vUg/baBy0KHLsTRxqd2dGs9oHunNt5+ydvrJWrFWw+voQBkJ5jJ73gYIGg1XAtOLCCa3KHgiDLcjOX9AjF7aVsLs/IWwjJDc4dmvBUI1DE6z2v125XYulhAolFd46I9SaygWnUx1DnSxZwrJ0nqVxnL7Nk2qeVUnKM0DI6L2p8N1E7s3HHglfZO3nEW6nSdpwTyuJwwCfHCqONLoGaTEMGlAcnDa7I2IQ+I2SJ2AjlBsUN/BkxU/qnRaFf7FG0shGO47HcrRqckkLhjetJzggDio5Wahl16jPgw5vMtbQSXdmcmepH7aetGcxUqpvN/rxyzTwWqhe4HgpNQN5PIEjG6rOofUfBiU21KhsoG3JnLI1eiv6YuLSRGtJh6iW+pGG+qREwDzxiDyC6Jrw9z18D0Z4FZ+oDRUPNCuwgpV9qqidMyTh0NtS/ug8oUHgKKUc3KAXLDOidVc0Z4sj60P4PJJnadzvWcExziGfLRnHWZ7nOFsui2o2L9iSQ71IF4s6Im6kDmRpHTg8HL51cZzxAaUEPIv0a7V9jb1YQlEXSVxc3ot8fmkvLmzEy8uQ/mEZ/Of7y12I4/j/Mpwvg7DlEOpRWz/8n3fhwQd/mGCH3HBkwhKRO499mP7i/mJHARDsHHrU5ruXcMIOvwBXrxHsDwYAAA==&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=1dd459ab8321e6101e5de070deaad399"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=1dd459ab8321e6101e5de070deaad399"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;request_item&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Request Item&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_1dd459ab8321e6101e5de070deaad399&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 14:07:51&lt;/sys_created_on&gt;&lt;sys_id&gt;73acd1af8321e6101e5de070deaad3fb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="LaptopRequest" source="x_1755447_laptop_0"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="LaptopRequest"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:07:51&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_1dd459ab8321e6101e5de070deaad399&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 13:33:33&lt;/sys_created_on&gt;&lt;sys_id&gt;ddd459ab8321e6101e5de070deaad3a2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="LaptopRequest" source="x_1755447_laptop_0"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="LaptopRequest"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 13:33:33&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_1dd459ab8321e6101e5de070deaad399"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_1dd459ab8321e6101e5de070deaad399"/&gt;&lt;sys_hub_flow_snapshot action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=integrated,timeFromCreateToActivate=113126000,viewActivatedIn=diagramming&lt;/attributes&gt;&lt;authored_on_release_version&gt;27000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from&gt;8ef9d20383ed26101e5de070deaad31c&lt;/copied_from&gt;&lt;copied_from_name/&gt;&lt;description&gt;IT manager approve or reject the request due to the storage.&lt;/description&gt;&lt;flow_priority/&gt;&lt;internal_name&gt;new_employee_laptop_application&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"Service Catalog_1.request_item.requested_for.email","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"b7ac81f6-ce1f-4ff2-b9c9-5aa2cd7511b5":["ah_to"]}},{"name":"Service Catalog_1.request_item.requested_for","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"requested_for","usedInstances":{"6df7a543-201c-439e-87c7-4a75d8e81086":["ah_to"]}},{"name":"Service Catalog_1.table_name","label":"Trigger - Service Catalog➛Table Name","type":"table_name","base_type":"table_name","usedInstances":{"71a77a7b-6007-49a9-88b4-78a6bb3adcda":["requested_by"]},"attributes":{"test_input_hidden":"true"}},{"name":"Service Catalog_1.request_item.sc_catalog.sys_scope","label":"Trigger - Service Catalog➛Requested Item Record➛Catalog➛Application","reference":"sys_scope","reference_display":"Application","type":"reference","base_type":"reference","parent_table_name":"sc_catalog","column_name":"sys_scope","usedInstances":{}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"c5de04a4-9cde-444e-995b-65c9daf7277f":["record"],"71a77a7b-6007-49a9-88b4-78a6bb3adcda":["requested_by","employee_name"],"b7ac81f6-ce1f-4ff2-b9c9-5aa2cd7511b5":["record"]},"attributes":{"default_search_field":"number"}},{"name":"c5de04a4-9cde-444e-995b-65c9daf7277f.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"b5de6d16-7275-4c88-8002-00a60b1e1b7e":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.46d44a23a9fe19810012d100cca80666}}","label":"Beth Anglin","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"c5de04a4-9cde-444e-995b-65c9daf7277f":["approval_conditions"]}},{"name":"Created or Updated_1.current.current","label":"Trigger - Record Created or Updated➛Record","type":"reference","base_type":"reference","usedInstances":{"c5de04a4-9cde-444e-995b-65c9daf7277f":["record"]},"attributes":{}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛laptop_request Record","reference":"x_1755447_laptop_0_laptop_request","reference_display":"laptop_request","type":"reference","base_type":"reference","usedInstances":{"c5de04a4-9cde-444e-995b-65c9daf7277f":["record"]},"attributes":{}},{"name":"Created or Updated_1.current.requested_by","label":"Trigger - Record Created or Updated➛laptop_request Record➛Requested By","reference":"","reference_display":"Requested By","type":"string","base_type":"string","parent_table_name":"x_1755447_laptop_0_laptop_request","column_name":"requested_by","usedInstances":{"0a9abd0f-d59e-465b-b9b2-5acbdf8b7708":["email_to"],"7125ee29-93f9-4861-a36b-b8f744479888":["email_to"]}}]&lt;/label_cache&gt;&lt;master&gt;true&lt;/master&gt;&lt;name&gt;New Employee Laptop Application&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;parent_flow display_value="New Employee Laptop Application"&gt;1dd459ab8321e6101e5de070deaad399&lt;/parent_flow&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;status&gt;published&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow_snapshot&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 14:08:06&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;53bc19278361e6101e5de070deaad3b6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="LaptopRequest"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:08:06&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow_snapshot&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=53bc19278361e6101e5de070deaad3b6"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=53bc19278361e6101e5de070deaad3b6"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=53bc19278361e6101e5de070deaad3b6"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=53bc19278361e6101e5de070deaad3b6^sys_idNOT IN17bc19278361e6101e5de070deaad3b7"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;53bc19278361e6101e5de070deaad3b6&lt;/id&gt;&lt;name&gt;New Employee Laptop Application&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 14:08:06&lt;/sys_created_on&gt;&lt;sys_id&gt;17bc19278361e6101e5de070deaad3b7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:08:06&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=17bc19278361e6101e5de070deaad3b7"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=53bc19278361e6101e5de070deaad3b6^sys_idNOT INd3bc19278361e6101e5de070deaad3b8,e3bc19278361e6101e5de070deaad3d5"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;sc_req_item&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="New Employee Laptop Application"&gt;53bc19278361e6101e5de070deaad3b6&lt;/model&gt;&lt;model_id&gt;53bc19278361e6101e5de070deaad3b6&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_53bc19278361e6101e5de070deaad3b6&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 14:08:06&lt;/sys_created_on&gt;&lt;sys_id&gt;d3bc19278361e6101e5de070deaad3b8&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="LaptopRequest"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:08:06&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d3bc19278361e6101e5de070deaad3b8"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;request_item&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;Request Item&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="New Employee Laptop Application"&gt;53bc19278361e6101e5de070deaad3b6&lt;/model&gt;&lt;model_id&gt;53bc19278361e6101e5de070deaad3b6&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_53bc19278361e6101e5de070deaad3b6&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="sc_req_item"&gt;sc_req_item&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 14:08:06&lt;/sys_created_on&gt;&lt;sys_id&gt;e3bc19278361e6101e5de070deaad3d5&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="LaptopRequest"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:08:06&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e3bc19278361e6101e5de070deaad3d5"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=53bc19278361e6101e5de070deaad3b6"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=53bc19278361e6101e5de070deaad3b6"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=53bc19278361e6101e5de070deaad3b6^sys_idNOT IN6fbc19278361e6101e5de070deaad3f2"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="New Employee Laptop Application"&gt;53bc19278361e6101e5de070deaad3b6&lt;/flow&gt;&lt;name&gt;Service Catalog&lt;/name&gt;&lt;published_version/&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 14:08:06&lt;/sys_created_on&gt;&lt;sys_id&gt;6fbc19278361e6101e5de070deaad3f2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:08:06&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Service Catalog"&gt;c43a1011c36813002841b63b12d3ae15&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;H4sIAAAAAAAA/61TTW/bMAz9K4FOG5CDk6zNktswoECAbgWarpdiMGSJcoTJkifJbr2g/32kPxK3M4YB3U2iyMfHx6eHIzM8A8O27LaysyvjHmc7y+ZM2wjecnPXlICP4uC0AIx3h2sdIts+HJm656aihIyLH7l3lZWYpK5HmIowtZ2dM2bvJChemfiecncFzwmBznswICJItlXcBMDItzC+fdEhaJv3gef5iIByHv5O4GXGG9p+n7OCW8mj8805ybviDorS8AinoPMSPNsukmTOaiK6b8JOdl0tL6i/r2xKDFNNstf9NHiUOiBYc3+OiIM20oNF5ZFCyT0iRMI/vnrS1OIy2SRivdys18tktUoSdZEpoYRYf1wkl4uLDQJOr36SWHzlg/Fk8BTBypFgf6rjgcsba86BAxqsm6rgT0H/QvAPCeUpwDFEP/HpmvZqDEIQi9A60Py71eopr/aDJGSmKawXrqmnzDZIQb7ou33+/wQXbya4JIKddDdl1A7Nwla0Wp4ZqglN6BbuQWBJGr3OcyzEImeqwn6d8kXPfuTSKuC2oCRH0IqH77E/uMfbYZ1X2raU+kfjBDenG4/YOasi6XdkXNYcK8jR0WOP59YV6c+KKtp/MvRK24koIQivy/hJRF3D6dP+BvLQA67rBAAA&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;service_catalog&lt;/trigger_type&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=53bc19278361e6101e5de070deaad3b6^sys_idNOT INe3bc19278361e6101e5de070deaad3e4,e7bc19278361e6101e5de070deaad3e5,e7bc19278361e6101e5de070deaad3f2"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Ask For Approval"&gt;f8f2e9920b10030085c083eb37673abd&lt;/action_type&gt;&lt;action_type_parent display_value="Ask For Approval"&gt;bae0a1120b10030085c083eb37673a92&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;f8f2e9920b10030085c083eb37673abd&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="New Employee Laptop Application"&gt;53bc19278361e6101e5de070deaad3b6&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 14:08:06&lt;/sys_created_on&gt;&lt;sys_id&gt;e3bc19278361e6101e5de070deaad3e4&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="LaptopRequest"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:08:06&lt;/sys_updated_on&gt;&lt;ui_id&gt;c5de04a4-9cde-444e-995b-65c9daf7277f&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+1YXY/aOBT9K8jPDJsQyATeRoNGmmq3lWDal6GKjH0DrkxCY2daNuK/703sfBRmKKzow3T6gvD1vc65h3PsmMecCE7G5DqI+jAa9Z2F6zie4wRD5gQeLLxr/9qjzCFdEtM1YGYKLEk5jp+ozIpAns8gfRIMOrdUU5ksQ7eXwtcMlA6FhvVuh8lcqI2k20+2BiNsJSRPISbjx89dsqEpLq8hJeN8b+pUfJIuQGLqtAK4D1hvN8WYJyxbQ4zgquDftnJiZzr3E5zBogKO0yXwXUPMAXFEVCrokjWNOdVJuiVjnWYYSIHyD7Hc1hkrEWvT55p+V+JffLDXL/IiwMaY5aAehpYfE44mSOQMV2Y6S2u6EqRYGUo4RDST+rYdMwkfNloksSnRdCGr6kRm6/i9IYTUC7R+jkwhCNgUfRbITVvRbJV8m1Yg70RcMmJblAmjsh5RrVOxyHQBJycgoaR4TTcbES/DTZo8ibIYoax7S4mDXiSTb/hMJZZxj7ICdw9Zpb07jE/K8CeaiqKJf3AZLN51idqqW0mValpBDsOvWYHENGZbCEsWDAVFHUvFRt/gU57AYt51rfYX7Ki2WCMls1wjfcVCVHqp8kONT40HgHfuzfx5ij8BVaX4BwtrD6XVezkMy7kf5V6Wdd6bCat297jabaSRu9HJM2oPnFekdtvWq5f7z5QOA98b4sd15Dlu33UC8IOAjRzKAt8fDrxGQ4gAe6AS9U0Vrt1o/gKb+QkwKmnfWBydaYXjRYBW7gp/mHi5J/VZFbQy758p85d3ddd/S0LPxMMeyyZywPOvcUTxuI+xwH31vtCR31/4IyfgVzxyFleDwBteUQbOFfjuEIbcZ0PX+wUuctxjOzMPnhFpJEC235mqiUMztWbOM9UJqA5MdWdhvQTXWqocPneClPV7J8jlrBU4zmvy1lt6ZWJHxQatg+RLkqXxEQeEK6FKZbzohFbGeY44AWTliHcG5b4h9sH/Hz94f/zw+/thMDwqtdbLea1qlsRcFIhVyxVmZwY1hS/AtLqJtx8f81xpqgXrDXw+GNC+R0cRuKMAn+T2OX4yRgPH9/3d7vOhiy6w4nmuO4GK+qaeSVA/o8Z6rnnfs0Vt3zVviXbSem9wqbv7K7PeW7nPsKNai0aNtniGBFHdvrznc2Jgz8l4TuIkhjnpzkmRFRbiKsOYgeDqiTKW57udiWQptQu4rWFTzelWlZmKrYCjNsvoD5GwNIONX+KfshM4qfw3yaAzMaQc0lRdpyqchhdxcObNbEK50l8Pon32DS929g3+2O8Sl6ewvl7gwYa73+U8WQUL/LWK8Ptz9sVj5T/W9VhneBYAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Send Email"&gt;c1806bf4a70323008299b39f087901cb&lt;/action_type&gt;&lt;action_type_parent display_value="Send Email"&gt;98c181d20b100300d97d8bf637673ab5&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Send approval email&lt;/comment&gt;&lt;compiled_snapshot&gt;c1806bf4a70323008299b39f087901cb&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="New Employee Laptop Application"&gt;53bc19278361e6101e5de070deaad3b6&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id&gt;b5de6d16-7275-4c88-8002-00a60b1e1b7e&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 14:08:06&lt;/sys_created_on&gt;&lt;sys_id&gt;e7bc19278361e6101e5de070deaad3e5&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="LaptopRequest"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:08:06&lt;/sys_updated_on&gt;&lt;ui_id&gt;6df7a543-201c-439e-87c7-4a75d8e81086&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+2X7W7bNhSGb4XQb8+Vv+PsV2YjWIG0BeqgxdAUAkVSNldKVEkqqRvkXnYtu7IeStSXnbl24mEJlj9BdPj1nsP30ZE/3XqceqfekJ744zAa4ok/6A98/6Q/nYaDaeSfTKZ+j1Cv4yU4ZjBTMSKVfb7GIrMB+JdynQq8/lBHyIoLqljinX763PFSrGCxYco7vd0Y2vd0gUMmYOolVktm0PtSxaYqs07tM5Uki1liAl4GL9wGczeCXs9hBBZZVX7HY98MSygDOREWmnW8GCcUG6nWVUQxTN8log6seGJgyzOtJeHYMI3MiiEWYy7QDTcrhFEhrOvZ/b5p/h3EDfp2q4hBDYjVyhPCKSjyGuHAlRSGX9fD0RwbvDAqIyZTVaUlJ0wX1aQswpkws2asmPAuNVwmxRKDQ1GuliKLk7dFEb1qg8ZNZhrEsNTWxiYLh0Pi0WIlb96XYs95klfRVUVIgkX1FC0YVmR1zpmwV51kcQhzOx42RvEwM1YmmELArPqcIJdqz4KZTLD8KmOcpjxZBqmS1zw/EOTH3aWAh24k5A2s13yZdDGxuXbh9nD3HOLzPPwBK24TfwPbwOK7jqfXeiaw1nX6UP/ga2bVF8Voy7Grg9xwdjFRPDVncNQ1c8nedRxNvekuP9Nh7dvGnkclag8FNVHWDfcrcjRtxS6aa9HbYsCx1DuQpcJRDqVL4McUiBfkIOPkVfic+G18/gGbp4FLBcHevLS5+He8DybRQWFgl1t++AOY+BkJ/ngchuNwNBnUPpySiE7CaIwnZFD77gbenyrG6kuQvz8bOPS2eXBvhsOY2ENLyQS8c0VGGfpYitql00ESSgkvsWSTEFD66jyvbkVI/1HdprAmMhLBZYo19JhKkg3WHcissEFcIw231UWXEnGXVWNFB61lhuJMG5hmYKQFX6ttDZ8ud84OLjq/1yvPAszjAzja3QhwbWy8CoxsYHd7u2DqGu4EzUCzkMug11Xsa8Y0fFUZFpcPjAaRVHd3aBvTh2xxGNN7pFf1Obmdq0NXw80myw1yF2XQUTvYTW3RxragbbQt/+kC9Fz4sMIFj3luiILs4yNDd3qK+S0bEXLcD7c9Di8NPZttKznE0MOHtaEXRz87R/d2/r5m45aPwmNbeo/TS0v/tuHp8GBTj15M/T8x9Wi3rUjLSDoL/2TENIz9h8xU/gXNCc4/qFdYo5CxxAahCoxuW3+vNQd+wPw8ixKORZXDfXkdAsn45VPmP2fk+EDgnVaK+u03q6TrBg1Xme8PSIqs5l8MT9YxYUpKE0JhvuSD9Mq7KqYx+7c/TkKd/lqse5W6gcTtUzyeOSjak7axai36+6+H7XkYdnvUqupJRaW2SueAW5lYbOD2++Wbixq2ySM70ng0GoxfcHt0S0pvaJ8qmaYutyO3pc8/AOKPDOlLGQAA&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Send Email"&gt;c1806bf4a70323008299b39f087901cb&lt;/action_type&gt;&lt;action_type_parent display_value="Send Email"&gt;98c181d20b100300d97d8bf637673ab5&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Send rejected email&lt;/comment&gt;&lt;compiled_snapshot&gt;c1806bf4a70323008299b39f087901cb&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="New Employee Laptop Application"&gt;53bc19278361e6101e5de070deaad3b6&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;5&lt;/order&gt;&lt;parent_ui_id&gt;91d5f11b-b0b8-4614-bbd7-e4d009967b31&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 14:08:06&lt;/sys_created_on&gt;&lt;sys_id&gt;e7bc19278361e6101e5de070deaad3f2&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="LaptopRequest"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:08:06&lt;/sys_updated_on&gt;&lt;ui_id&gt;b7ac81f6-ce1f-4ff2-b9c9-5aa2cd7511b5&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+2X327bNhTGX4XQtefKdmzH2VUXI1iAtAXioMPQFAJFUjZXSlRJKq4b+F32LHuyHUrUPztz7cTDEiw3BkTykN85/H468qd7j1PvzDuhp/4ojE7w2B/0B75/2p9MwsEk8k/HE79HqNfxEhwzWKkYkco+32GR2YH7+xlTd5wwdI4NFnIe9LqKfc2YNgE3LF6vYTHlOhV49dHFwAhZcEEVS7yzT587XooVbG+Y8s7uN6b21SdwyAQsvcFqzgy6LnVu6jar1D5TSbKYJaCxHLxyG0zdDLqcwgwEWVV+x2PfDEsoAzkRFpp1vBgnFBupVtWIYph+SEQ9sOCJgS3fai0Jx4ZpZBYMsRhzgZbcLBBGhbCuZ/f7pvl3EDfo260iBjUgVitPCKegyGsMB66kMH1ZT0dTuIOZURkxmaoqLeF2dFFNyiKcCXPeHCsWfEgNl0kRYnAoymgpsjh5XxTRqzZo3GSmQQxLbW1ssnA4JB7NFnJ5XYq94EleRVcVIQkW1VM0Y1iRxQVnwl51ksUhrO142BjFw8xYmWAKAavqc4Jcqj0LVjLB8quMcZryZB6kSt7x/ECQH3fnAh66kZBLiNd8nnQxsbl24fZw9wLGp/nwR6y4TfwdbAPB646nV/pcYK3r9KH+wdfMqi+K0ZZjo4PccDaYKJ6at3DUHXPJrjuOt95kl5/pSe3bxp41c5oEgFiO1zZc1wV8jKLLYv4w1PaQVqNmbfKwVIfZ1thVMxa9LyYcZL0DISus5hi7AbBMwX6BFDJOXsXVqd/m6h94eh4cVXTsDVIbmH8HCjCJDgpnu9zywx8By48Q8UejMByFw/Gg9uGERHQcRiM8JoPad0t4saoYqy9B/mJtcNLbpsO9Mg5jYg8tJRPwMhYZZei3UtQunQ6SUEp4uyWbhIDSNxd5dStC+k9qQ4U1kZEILlOsoPlUkuxg3ZrMAhvENdJwW110IxF3WTUiOmglMxRn2sAyAzMt+Fr97OT5cufs4EanD3rlRYB5fACHuxsBro2NF4GRB3wSlg+MBpFU3dxz6zXahvXxGx3G9x6pVj1PbuftMNZwy8l8g+JZOegIHuwmuGhpWwA3Wpj/fGF6KaxY4YLHPDdEQfnx8aE7PcX8lo0IaeBzhP9LexxeGvr8fFvJIYY+eVxLenX0i3N0b+efcDZq+Sg8tqX3OL209C8bng4PNvXw1dT/E1MPd9uKtIyks/APRkzD2L/LTOVf05zg/ON6gTUKGUvgO9guZXTb+nvFHPgB8+MsSjhmVQ4P5XUIJKPXT5n/nJHjA4F3Winqt9+skq4aNNxmvj8gKbKafzI8WcWEKSlNCIX5kk/SW++2WMbsb3+UhDr9uYh7k7qJxO1TPF47KNqLtrFqBf315+P2PAy7PWpV9aSiUlulc8AtTCw2cPv15t1VDdv4iR1pNBwORq+4PbklpUvap0qmqcvtyG3p89+99WB3khkAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=53bc19278361e6101e5de070deaad3b6"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=53bc19278361e6101e5de070deaad3b6^sys_idNOT IN27bc19278361e6101e5de070deaad3e2,a3bc19278361e6101e5de070deaad3e3,efbc19278361e6101e5de070deaad3e0"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;848988db83e566101e5de070deaad328&lt;/block&gt;&lt;comment/&gt;&lt;connected_to&gt;b5de6d16-7275-4c88-8002-00a60b1e1b7e&lt;/connected_to&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="New Employee Laptop Application"&gt;53bc19278361e6101e5de070deaad3b6&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="Else"&gt;1f781bf3c32232002841b63b12d3aee6&lt;/logic_definition&gt;&lt;order&gt;4&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 14:08:06&lt;/sys_created_on&gt;&lt;sys_id&gt;27bc19278361e6101e5de070deaad3e2&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:08:06&lt;/sys_updated_on&gt;&lt;ui_id&gt;91d5f11b-b0b8-4614-bbd7-e4d009967b31&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;04bc95278361e6101e5de070deaad377&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="New Employee Laptop Application"&gt;53bc19278361e6101e5de070deaad3b6&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="End"&gt;d176605ea76103004f27b0d2187901c7&lt;/logic_definition&gt;&lt;order&gt;6&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id&gt;91d5f11b-b0b8-4614-bbd7-e4d009967b31&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 14:08:06&lt;/sys_created_on&gt;&lt;sys_id&gt;a3bc19278361e6101e5de070deaad3e3&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:08:06&lt;/sys_updated_on&gt;&lt;ui_id&gt;1ac1caf3-7b79-4620-b9f7-50e36435e588&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;66c6441b83e566101e5de070deaad363&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="New Employee Laptop Application"&gt;53bc19278361e6101e5de070deaad3b6&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;2&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 14:08:06&lt;/sys_created_on&gt;&lt;sys_id&gt;efbc19278361e6101e5de070deaad3e0&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:08:06&lt;/sys_updated_on&gt;&lt;ui_id&gt;b5de6d16-7275-4c88-8002-00a60b1e1b7e&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+1VXWvbMBT9K0PPjvFnMuetpBQG3Qpr6ctWzLUkJ2Ky5Uly0szkv+/KdpywZmxlfdybdaR7dc7RPbgjqrVNa82DujJGrGuy/PLkEVE7DL87UkPFyZJQVTNhharzHvDIFmTrNvCTCdNI2D+eELoRkmk+dmtAY43lmiy7X7YEw4IygDLMaEjjaB5HQRC9T8JiHhdhxGLgEGNDCQWXeHR1pPHutke83/Kz+8bhxmpRr8f17djl/ggqzRyrMPAIf7a8Zhz5lCAN90gFNQOr9H5CNAd2V8sTsBG1HQRX8GzED7wwSlN3sOQokY5uTMt8dGqAy2uwgFRaals9GacE5WYwh/ESWmlX59hw4K5xUocSC4U8VivZVvWnwREyNTh7mNYgCd44pY76qKO836jd5yPLG1H3roybUlGQ0wosele01vHpCJe8wkZ5BU2DjuaNVlvRFyOXyl9LXPilVDu81E2XD9QR99FY8G8Qv+7hR9DCqfiIbbB4oFmAETTvJxHboU2cHDxi9mYlwZiTSHQ3/946ioPkUVw++ONKqBaNvcKbt3zUcfBeDvbZTHcdTRkPEkhmGWV8liQJn2VZWszmKc0YlItosSh9ZIt6QebGguWHw9c2CGI2oDhIL4LxVm1fl64M0jINg/RyupL5pXRdyNUrIxX9IVLuPf8yUUEQ/I/UP0dKmHwIwqitv/wNE/Xk4jPcOXlNhUFqDw77cPyjuI09Dpeg59BO6W9O1Ak7/ASia+btmwYAAA==&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=53bc19278361e6101e5de070deaad3b6"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=53bc19278361e6101e5de070deaad3b6"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;request_item&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Request Item&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_53bc19278361e6101e5de070deaad3b6&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 14:08:06&lt;/sys_created_on&gt;&lt;sys_id&gt;2bbc19278361e6101e5de070deaad3d9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="LaptopRequest" source="x_1755447_laptop_0"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="LaptopRequest"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:08:06&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_53bc19278361e6101e5de070deaad3b6&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 14:08:06&lt;/sys_created_on&gt;&lt;sys_id&gt;6bbc19278361e6101e5de070deaad3d2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="LaptopRequest" source="x_1755447_laptop_0"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="LaptopRequest"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:08:06&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_53bc19278361e6101e5de070deaad3b6"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_53bc19278361e6101e5de070deaad3b6"/&gt;&lt;sys_hub_flow action="UPDATE"&gt;&lt;sys_id&gt;1dd459ab8321e6101e5de070deaad399&lt;/sys_id&gt;&lt;latest_snapshot&gt;53bc19278361e6101e5de070deaad3b6&lt;/latest_snapshot&gt;&lt;compiler_build/&gt;&lt;/sys_hub_flow&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=1dd459ab8321e6101e5de070deaad399^sys_idNOT INfbbc59278361e6101e5de070deaad306"/&gt;&lt;sys_flow_trigger_plan action="INSERT_OR_UPDATE"&gt;&lt;binding_strategy&gt;com.snc.process_flow.engine.binding.RunAlways&lt;/binding_strategy&gt;&lt;plan/&gt;&lt;plan_id&gt;1dd459ab8321e6101e5de070deaad399&lt;/plan_id&gt;&lt;snapshot&gt;53bc19278361e6101e5de070deaad3b6&lt;/snapshot&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 14:08:07&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;fbbc59278361e6101e5de070deaad306&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 14:08:07&lt;/sys_updated_on&gt;&lt;trigger display_value=""&gt;f3bc59278361e6101e5de070deaad306&lt;/trigger&gt;&lt;/sys_flow_trigger_plan&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=1dd459ab8321e6101e5de070deaad399"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>469792259</payload_hash>
+        <record_name>New Employee Laptop Application</record_name>
+        <reverted_from/>
+        <source>9fbd2a03832166101e5de070deaad3e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 14:18:05</sys_created_on>
+        <sys_id>6d0f99e78361e6101e5de070deaad30e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196f85bc2330000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:18:05</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>e10f99e7e561e610df7db5141682140e</update_guid>
+        <update_guid_history>e10f99e7e561e610df7db5141682140e:469792259,f3bc5927f661e61052b687c6a3442a3a:1817550968,dfbc19270361e610998dcf843d50f77b:-996995069,88bc95279761e6106ab3db49edb3a693:732142007,a9d459ab7621e6108fd938043125e3fb:-759934596,55d459abe721e61078fb76347d1dee9d:-1027412943</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-24 12:59:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>05e0df2b8eea43708e0a8eaf2aa01840</sys_id>
+        <sys_metadata>1dd459ab8321e6101e5de070deaad399</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Employee Laptop Application</sys_name>
+        <sys_package display_value="LaptopRequest" source="x_1755447_laptop_0">fd80f47683e1e2101e5de070deaad311</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_scope_delete display_value="">5a75c4b8f3c54110a774875937418e41</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_1dd459ab8321e6101e5de070deaad399</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_1dd459ab8321e6101e5de070deaad399">6d0f99e78361e6101e5de070deaad30e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-24 12:59:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
