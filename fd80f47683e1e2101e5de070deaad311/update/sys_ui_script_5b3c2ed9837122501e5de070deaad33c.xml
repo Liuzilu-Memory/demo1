@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <global>false</global>
+        <ignore_in_now_experience>false</ignore_in_now_experience>
+        <name>x_1755447_laptop_0.jsPDF Library</name>
+        <script><![CDATA[var PDFGenerator = Class.create();
+PDFGenerator.prototype = {
+    initialize: function() {},
+
+    generatePDF: function(tableName, recordId) {
+        var gr = new GlideRecord(tableName);
+        if (!gr.get(recordId)) {
+            return { success: false, message: '记录未找到' };
+        }
+
+        var doc = new jsPDF();
+        var yPos = 20;
+
+        // 添加标题
+        doc.setFontSize(16);
+        doc.text(20, yPos, tableName + ' 详情 - ' + gr.getValue('number'));
+        yPos += 10;
+
+        // 添加字段内容
+        doc.setFontSize(12);
+        var fields = this._getDisplayFields(tableName);
+        fields.forEach(function(field) {
+            if (gr.isValidField(field) && !gr.isNull(field)) {
+                doc.text(20, yPos, field + ': ' + gr.getDisplayValue(field));
+                yPos += 8;
+            }
+        });
+
+        // 生成并返回base64编码的PDF
+        return {
+            success: true,
+            pdfBase64: doc.output('datauristring').split(',')[1]
+        };
+    },
+
+    _getDisplayFields: function(tableName) {
+        var displayFields = {
+            'incident': ['number', 'short_description', 'description', 'priority', 'state', 'assigned_to', 'opened_by', 'opened_at'],
+            'task': ['number', 'short_description', 'description', 'priority', 'state', 'assigned_to', 'opened_by', 'opened_at'],
+            'problem': ['number', 'short_description', 'description', 'priority', 'state', 'assigned_to', 'opened_by', 'opened_at']
+        };
+
+        return displayFields[tableName] || ['number', 'short_description', 'sys_created_on', 'sys_updated_on'];
+    },
+
+    type: 'PDFGenerator'
+};]]></script>
+        <script_name>jsPDF Library</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-28 06:25:43</sys_created_on>
+        <sys_id>5b3c2ed9837122501e5de070deaad33c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1755447_laptop_0.jsPDF Library</sys_name>
+        <sys_package display_value="LaptopRequest" source="x_1755447_laptop_0">fd80f47683e1e2101e5de070deaad311</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_update_name>sys_ui_script_5b3c2ed9837122501e5de070deaad33c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-28 06:25:43</sys_updated_on>
+        <ui_type>0</ui_type>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>

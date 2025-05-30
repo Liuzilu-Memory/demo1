@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[console.log('jsPDF是否已加载:', typeof jsPDF !== 'undefined');
+
+function($scope, $element, $timeout, glideAjax) {
+    var vm = this;
+    
+    // 动态加载jsPDF库
+    function loadJsPdf(callback) {
+        if (typeof jsPDF !== 'undefined') {
+            callback();
+            return;
+        }
+        
+        // 替换为你的jsPDF库的sys_id
+        var jsPdfSysId = 'YOUR_JS_PDF_SCRIPT_INCLUDE_SYS_ID';
+        
+        // 动态加载脚本
+        var script = document.createElement('script');
+        script.src = '/sys_script_include.do?sys_id=' + jsPdfSysId + '&JSON&sysparm_get_current_values=true';
+        script.onload = callback;
+        script.onerror = function() {
+            alert('无法加载PDF生成库，请联系管理员');
+        };
+        document.head.appendChild(script);
+    }
+    
+    // 获取当前记录信息
+    vm.tableName = $scope.options.table_name || g_form.getTableName();
+    vm.recordId = $scope.options.record_id || g_form.getUniqueValue();
+    
+    // 生成并下载PDF
+    vm.generatePDF = function() {
+        if (!vm.recordId) {
+            alert('请先保存记录再导出PDF');
+            return;
+        }
+        
+        loadJsPdf(function() {
+            // 显示加载状态
+            var button = $element.find('button')[0];
+            var originalText = button.innerHTML;
+            button.disabled = true;
+            button.innerHTML = '<i class="fa fa-spinner fa-spin"></i> 正在生成...';
+            
+            // 调用服务器端脚本
+            var ga = new GlideAjax('PDFGenerator');
+            ga.addParam('sysparm_name', 'generatePDF');
+            ga.addParam('sysparm_table_name', vm.tableName);
+            ga.addParam('sysparm_record_id', vm.recordId);
+            ga.getXML(function(response) {
+                // 恢复按钮状态
+                button.disabled = false;
+                button.innerHTML = originalText;
+                
+                var answer = response.responseXML.documentElement.getAttribute('answer');
+                var result = JSON.parse(answer);
+                
+                if (result.success) {
+                    // 创建并触发下载
+                    var link = document.createElement('a');
+                    link.href = 'data:application/pdf;base64,' + result.pdfBase64;
+                    link.download = vm.tableName + '_' + g_form.getValue('number') + '.pdf';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                } else {
+                    alert('生成PDF失败: ' + result.message);
+                }
+            });
+        });
+    };
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.pdf-generator-widget {
+    margin: 10px 0;
+}
+
+.pdf-generator-widget button {
+    transition: all 0.3s ease;
+}
+
+.pdf-generator-widget button:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>demo3_1</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Demo3_1</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-28 06:14:45</sys_created_on>
+        <sys_id>ccf96219837122501e5de070deaad39f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Demo3_1</sys_name>
+        <sys_package display_value="LaptopRequest" source="x_1755447_laptop_0">fd80f47683e1e2101e5de070deaad311</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_update_name>sp_widget_ccf96219837122501e5de070deaad39f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-28 06:34:54</sys_updated_on>
+        <template><![CDATA[<div class="pdf-generator-widget">
+    <button class="btn btn-primary" ng-click="vm.generatePDF()">
+        <i class="fa fa-file-pdf-o"></i> 导出PDF
+    </button>
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>ccf96219837122501e5de070deaad39f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-28 06:14:45</sys_created_on>
+        <sys_id>80f96219837122501e5de070deaad3a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-28 06:14:45</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
