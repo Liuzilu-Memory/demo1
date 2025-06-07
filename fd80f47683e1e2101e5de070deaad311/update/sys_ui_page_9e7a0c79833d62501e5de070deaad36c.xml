@@ -1,81 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
     <sys_ui_page action="INSERT_OR_UPDATE">
         <category>general</category>
-        <client_script><![CDATA[function closewindow() {
+        <client_script><![CDATA[function closeWindow() {
     GlideModal.get().destroy();
 }
 
-function getRecord() {
-    var grStock = new GlideAjax("getNumberOfStocks");
-    grStock.addParam('sysparm_name', 'getStocks');
-    grStock.addParam('sysparm_laptop_model', g_form.getValue('laptop_model'));
-    grStock.getXML(returnStock);
+function change_laptop_model(){
+	var grLaptopModel = new GlideAjax("getLaptopModel");
+	grLaptopModel.addParam("sysparm_name", "getLaptopModel");
+	grLaptopModel.addParam("assigner", g_form.getValue("name"));
+	grLaptopModel.getXML(getLaptopModel);
 }
 
-function returnStock(response) {
-    var result = response.responseXML.documentElement.getAttribute('answer');
-    g_form.clearValue('stock');
-    g_form.setValue('stock', result);
-    GlideModal.get().destroy();
+function getLaptopModel(response){
+	var laptopModel = response.responseXML.documentElement.getAttribute('answer');
+    g_form.setValue('laptop_model', laptopModel);
+	GlideModal.get().destroy();
 }]]></client_script>
         <description/>
         <direct>false</direct>
         <endpoint>x_1755447_laptop_0_demo3_22.do</endpoint>
         <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
-<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
-	<g:evaluate>
-			var tableName = RP.getWindowProperties().get('table_name');  // Getting the Target Table Name for which the operation needs to be done
-			tableName;
-	</g:evaluate>
-	<g:evaluate>
-		var choices = new GlideRecord('sys_choice'); //Querying the choice table to get the values which needs to be displayed in the Dialog Box
-		choices.addQuery('name', tableName);
-		choices.addQuery('element', 'u_choice_type'); //Give your Field Name created which needs to be displayed in the UI Page which opens on click on UI action
-		choices.addQuery('inactive', false);
-		choices.orderBy('sequence');
-		choices.query();
-		choices;
-	</g:evaluate>
-	<table style="margin:20px 10px;"> 
-	
-		<tr>
-			<td>
-				<label for="inc_cause"> Employee ID </label>
-			</td>
-			<td>
-				<select id="inc_cause">
-					<option value="" selected="selected">-- None --</option>
-					<j:while test="${choices.next()}">
-						<option value="${choices.value}">${choices.label}</option>
-					</j:while>
-				</select>
-			</td>
-			
-		</tr>
-		<tr>
-			<td colspan="2" style="text-align:right;padding-top:10px;">
-				<button class="btn btn-default" onclick="closeWindow()" style="margin-right:10px;">Cancel</button>
-				<button class="btn btn-primary" onclick="update_ticket()">Ok</button>
-			</td>
-		</tr>
-		
-	</table>
-	
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:js="null"
+xmlns:g2="null">
+    <div style="padding: 25px; text-align: center; font-family: Arial, sans-serif">
+        <div style="display: flex;justify-content: center;gap: 10px;margin-top: 20px;">
+            <div>
+                <h4>Change laptop model</h4>
+            </div>
+        </div>
+        <button id="ok_button" class="btn btn-primary uniform-button" 
+        onclick="change_laptop_model()">OK</button>
+        <button id="cancel_button" onclick="closeWindow()" class="btn 
+        btn-default uniform-button">CANCEL</button>
+    </div>
+    <style>
+        /* 在UI Page的CSS字段中添加 */
+        .uniform-button {
+            min-width: 60px !important;
+            /* 设置最小宽度 */
+			paddin: 10px 25px !important;
 
-</j:jelly>]]></html>
+			front-size: 14px !important;
+
+			line-height:1.4 !important;
+
+			box-sizing: border-box !important;
+		}
+	</style>
+</j:jelly>
+
+]]></html>
         <name>demo3_22</name>
         <processing_script/>
         <sys_class_name>sys_ui_page</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-29 07:56:42</sys_created_on>
         <sys_id>9e7a0c79833d62501e5de070deaad36c</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>demo3_22</sys_name>
         <sys_package display_value="LaptopRequest" source="x_1755447_laptop_0">fd80f47683e1e2101e5de070deaad311</sys_package>
         <sys_policy/>
         <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
         <sys_update_name>sys_ui_page_9e7a0c79833d62501e5de070deaad36c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-05 06:41:17</sys_updated_on>
+        <sys_updated_on>2025-06-07 12:44:33</sys_updated_on>
     </sys_ui_page>
 </record_update>

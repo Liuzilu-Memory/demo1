@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set">
+    <item_option_new_set action="INSERT_OR_UPDATE">
+        <create_roles/>
+        <description/>
+        <display_title>false</display_title>
+        <internal_name>mrvs</internal_name>
+        <layout>normal</layout>
+        <name/>
+        <order>100</order>
+        <read_roles/>
+        <set_attributes/>
+        <sys_class_name>item_option_new_set</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 02:06:23</sys_created_on>
+        <sys_id>bb5704948382e6101e5de070deaad3c9</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>MRVS</sys_name>
+        <sys_package display_value="LaptopRequest" source="x_1755447_laptop_0">fd80f47683e1e2101e5de070deaad311</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_update_name>item_option_new_set_bb5704948382e6101e5de070deaad3c9</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-06-06 02:08:48</sys_updated_on>
+        <title>MRVS</title>
+        <type>one_to_many</type>
+        <version>4</version>
+        <write_roles/>
+    </item_option_new_set>
+</record_update>

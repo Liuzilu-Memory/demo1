@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1755447_laptop_0.ExcelParserUtil</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>ExcelParserUtil</name>
+        <sandbox_callable>true</sandbox_callable>
+        <script><![CDATA[var ExcelParserUtil = Class.create();
+ExcelParserUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    parseExcel: function() {
+		//gs.addInfoMessage("Called");
+        var mrvs = [];
+        var attid = this.getParameter('sysparm_attachment');
+        // gs.addInfoMessage("ExcelParserUtil");
+        // gs.addInfoMessage('sysparm_attachment:' + attid);
+        var parser = new sn_impex.GlideExcelParser();
+		var p = new sn_impex.GlideExcelParser();
+        var attachment = new GlideSysAttachment();
+        var attachmentStream = attachment.getContentStream(attid);
+        // gs.addInfoMessage('attachment_sys_id is "' + attachmentStream);
+        parser.setSource(attachmentStream);
+        var list_sheet_name = parser.getSheetNames();
+        for (var i = 0; i < list_sheet_name.length; i++) {
+            parser.setSheetName(list_sheet_name[i]);
+            if (parser.parse()) {
+                //retrieve the column headers
+                var headers = parser.getColumnHeaders();
+                var header1 = headers[0];
+                var header2 = headers[1];
+                var header3 = headers[2];
+                var header4 = headers[3];
+                // Iterate over each row in the worksheet
+                while (parser.next()) {
+                    var row = parser.getRow();
+                    mrvs.push({
+                        'variable_1': row[header1],
+                        'variable_2': row[header2],
+                        'variable_3': row[header3],
+                        'variable_4': row[header4]
+                    });
+                }
+
+            }
+        }
+        //gs.addInfoMessage("return");
+        return JSON.stringify(mrvs);
+    },
+    type: 'ExcelParserUtil'
+
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 02:28:14</sys_created_on>
+        <sys_id>337940588382e6101e5de070deaad3c6</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>ExcelParserUtil</sys_name>
+        <sys_package display_value="LaptopRequest" source="x_1755447_laptop_0">fd80f47683e1e2101e5de070deaad311</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_update_name>sys_script_include_337940588382e6101e5de070deaad3c6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-07 13:36:17</sys_updated_on>
+    </sys_script_include>
+</record_update>

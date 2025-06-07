@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set">
+    <item_option_new_set action="DELETE">
+        <create_roles/>
+        <description/>
+        <display_title>false</display_title>
+        <internal_name>mrvs</internal_name>
+        <layout>normal</layout>
+        <name/>
+        <order>100</order>
+        <read_roles/>
+        <set_attributes/>
+        <sys_class_name>item_option_new_set</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 01:54:40</sys_created_on>
+        <sys_id>479444908382e6101e5de070deaad31e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>MRVS</sys_name>
+        <sys_package display_value="LaptopRequest" source="x_1755447_laptop_0">fd80f47683e1e2101e5de070deaad311</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_update_name>item_option_new_set_479444908382e6101e5de070deaad31e</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-06-06 01:58:08</sys_updated_on>
+        <title>MRVS</title>
+        <type>one_to_one</type>
+        <version>4</version>
+        <write_roles/>
+    </item_option_new_set>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</application>
+        <file_path/>
+        <instance_id>b1c671171be64e18168f4089bd4bcb1f</instance_id>
+        <instance_name>dev274192</instance_name>
+        <name>item_option_new_set_479444908382e6101e5de070deaad31e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set"><item_option_new_set action="INSERT_OR_UPDATE"><create_roles/><description/><display_title>false</display_title><internal_name>mrvs</internal_name><layout>normal</layout><name/><order>100</order><read_roles/><set_attributes/><sys_class_name>item_option_new_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-06-06 01:54:40</sys_created_on><sys_id>479444908382e6101e5de070deaad31e</sys_id><sys_mod_count>4</sys_mod_count><sys_name>MRVS</sys_name><sys_package display_value="LaptopRequest" source="x_1755447_laptop_0">fd80f47683e1e2101e5de070deaad311</sys_package><sys_policy/><sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope><sys_update_name>item_option_new_set_479444908382e6101e5de070deaad31e</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2025-06-06 01:58:08</sys_updated_on><title>MRVS</title><type>one_to_one</type><version>4</version><write_roles/></item_option_new_set></record_update>]]></payload>
+        <payload_hash>413253686</payload_hash>
+        <record_name>MRVS</record_name>
+        <reverted_from/>
+        <source>9fbd2a03832166101e5de070deaad3e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-06-06 01:58:08</sys_created_on>
+        <sys_id>7c8544d08382e6101e5de070deaad3d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19742f5b5ac0000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-06-06 01:58:08</sys_updated_on>
+        <type>Variable Set</type>
+        <update_guid>b08544d01182e610bea815dcffdb89d1</update_guid>
+        <update_guid_history>b08544d01182e610bea815dcffdb89d1:413253686,ce7580d0f982e610192fe4893d136b3d:621951989,186508900882e610c9ed5125ee209285:830650292,a5158c909182e6100f97def9e149cdd5:1039348595,d2b400906b82e61027528b6dd25b4fd3:1665792086</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="MRVS">ed570c148382e6101e5de070deaad3db</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-06-06 02:06:07</sys_created_on>
+        <sys_db_object display_value="" name="item_option_new_set">item_option_new_set</sys_db_object>
+        <sys_id>2f52d6d81bd54d49be7a59b93ca2f679</sys_id>
+        <sys_metadata>479444908382e6101e5de070deaad31e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MRVS</sys_name>
+        <sys_package display_value="LaptopRequest" source="x_1755447_laptop_0">fd80f47683e1e2101e5de070deaad311</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_scope_delete display_value="">5a75c4b8f3c54110a774875937418e41</sys_scope_delete>
+        <sys_update_name>item_option_new_set_479444908382e6101e5de070deaad31e</sys_update_name>
+        <sys_update_version display_value="item_option_new_set_479444908382e6101e5de070deaad31e">7c8544d08382e6101e5de070deaad3d1</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-06-06 02:06:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

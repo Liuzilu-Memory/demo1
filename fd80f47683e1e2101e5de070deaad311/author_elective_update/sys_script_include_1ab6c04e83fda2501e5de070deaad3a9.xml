@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1755447_laptop_0.getNumberOfStocks</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>getNumberOfStocks</name>
+        <sandbox_callable>true</sandbox_callable>
+        <script><![CDATA[var getNumberOfStocks = Class.create();
+getNumberOfStocks.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getStocks: function() {
+        var gr = new GlideRecord('x_1755447_laptop_0_laptop_request');
+        gr.addQuery('laptop_model', this.getParameter('sysparm_laptop_model'));
+        gr.query();
+        if (gr.next()) {
+            return gr.stock;
+        }
+    },
+    type: 'getNumberOfStocks'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 02:17:26</sys_created_on>
+        <sys_id>1ab6c04e83fda2501e5de070deaad3a9</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>getNumberOfStocks</sys_name>
+        <sys_package display_value="LaptopRequest" source="x_1755447_laptop_0">fd80f47683e1e2101e5de070deaad311</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_update_name>sys_script_include_1ab6c04e83fda2501e5de070deaad3a9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-07 08:08:01</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</application>
+        <file_path/>
+        <instance_id>b1c671171be64e18168f4089bd4bcb1f</instance_id>
+        <instance_name>dev274192</instance_name>
+        <name>sys_script_include_1ab6c04e83fda2501e5de070deaad3a9</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1755447_laptop_0.getNumberOfStocks&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;getNumberOfStocks&lt;/name&gt;&lt;sandbox_callable&gt;true&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var getNumberOfStocks = Class.create();
+getNumberOfStocks.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getStocks: function() {
+        var gr = new GlideRecord('x_1755447_laptop_0_laptop_request');
+        gr.addQuery('laptop_model', this.getParameter('sysparm_laptop_model'));
+        gr.query();
+        if (gr.next()) {
+            return gr.stock;
+        }
+    },
+    type: 'getNumberOfStocks'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 02:17:26&lt;/sys_created_on&gt;&lt;sys_id&gt;1ab6c04e83fda2501e5de070deaad3a9&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;getNumberOfStocks&lt;/sys_name&gt;&lt;sys_package display_value="LaptopRequest" source="x_1755447_laptop_0"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="LaptopRequest"&gt;fd80f47683e1e2101e5de070deaad311&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_1ab6c04e83fda2501e5de070deaad3a9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-06-07 08:08:01&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2043516425</payload_hash>
+        <record_name>getNumberOfStocks</record_name>
+        <reverted_from/>
+        <source>9fbd2a03832166101e5de070deaad3e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-07 08:08:01</sys_created_on>
+        <sys_id>b4c3a66083826a101e5de070deaad36d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197496eb6650000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-07 08:08:01</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>7cc3a66039826a101816100de977016c</update_guid>
+        <update_guid_history>7cc3a66039826a101816100de977016c:2043516425,4dac37ff187d661056a9d63b8d79cdbb:-1276541018,a6bbbf3f6b7d66102b7cfd9517f2f193:1497928107,167558d35d75a21009751437cb53a6e1:-637104618,fce490576075a210703008acba2e424a:1507969729,3fc6444e03fda25060af53f8051d38b8:1081468588</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-07 09:59:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>01c9cec5827f4230b75bc3fbb1392900</sys_id>
+        <sys_metadata>1ab6c04e83fda2501e5de070deaad3a9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>getNumberOfStocks</sys_name>
+        <sys_package display_value="LaptopRequest" source="x_1755447_laptop_0">fd80f47683e1e2101e5de070deaad311</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="LaptopRequest">fd80f47683e1e2101e5de070deaad311</sys_scope>
+        <sys_scope_delete display_value="">5a75c4b8f3c54110a774875937418e41</sys_scope_delete>
+        <sys_update_name>sys_script_include_1ab6c04e83fda2501e5de070deaad3a9</sys_update_name>
+        <sys_update_version display_value="sys_script_include_1ab6c04e83fda2501e5de070deaad3a9">b4c3a66083826a101e5de070deaad36d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-07 09:59:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

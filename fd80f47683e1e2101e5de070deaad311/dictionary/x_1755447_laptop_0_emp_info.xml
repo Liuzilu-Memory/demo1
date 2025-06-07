@@ -2,6 +2,7 @@
     <element db_object_id="4b687b6183f962501e5de070deaad3a6" label="Emp_Info" max_length="40" name="x_1755447_laptop_0_emp_info" type="collection">
         <element label="Onboarding Date" max_length="40" name="onboarding_date" type="calendar_date_time"/>
         <element label="Employee ID" max_length="40" name="employee_id" type="integer"/>
+        <element label="Laptop Model" max_length="255" name="laptop_model" type="string"/>
         <element label="Name" max_length="255" name="name" type="string"/>
     </element>
 </database>
